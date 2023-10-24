@@ -6,7 +6,13 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+       },
+      fontFamily: {
+       inter: ["Inter","sans-serif"]
+      },
+    },
   },
   plugins: [],
 }
