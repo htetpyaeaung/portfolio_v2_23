@@ -57,3 +57,36 @@
     font-named-instance: 'Italic';
     src: url('Inter-italic.var.woff2?v=3.19') format('woff2');
 }
+
+ /* Google chrome */
+ @-webkit-keyframes svg-text-anim {
+  40% {
+     stroke-dashoffset: 0;
+     fill: transparent;
+   }
+   60% {
+     stroke-dashoffset: 0;
+     fill: #000000;
+   }
+   100% {
+     stroke-dashoffset: 0;
+     fill: #000000;
+   }
+   
+}
+/* Most browsers */
+@keyframes svg-text-anim {
+  40% {
+     stroke-dashoffset: 0;
+     fill: transparent;
+   }
+   60% {
+     stroke-dashoffset: 0;
+     fill: #000000;
+   }
+   100% {
+     stroke-dashoffset: 0;
+     fill: #000000;
+   }
+   
+}
