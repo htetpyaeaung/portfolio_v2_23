@@ -90,3 +90,11 @@
    }
    
 }
+
+.icons{
+  max-width: 8%;
+}
+
+div .icons{
+  margin-left: 8px;
+}
