@@ -1,7 +1,7 @@
 import './bootstrap';
 
 function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
-    let paths = document.querySelectorAll("path");
+    let paths = document.querySelectorAll("#svgGroup path");
     let mode=repeat?'infinite':'forwards'
     for (let i = 0; i < paths.length; i++) {
         const path = paths[i];
