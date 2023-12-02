@@ -15,3 +15,19 @@ function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeCo
     }
 }
 setTextAnimation(0.2,6,1.5,'ease','#080808',false);
+
+document.getElementById("hamburger").addEventListener("click",openNav);
+document.getElementById("hamburger-close").addEventListener("click",closeNav);
+
+/* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("svg-parent").style.display = "none";
+}
+
+  
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("svg-parent").style.display = "block";
+}
