@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Htet Pyae Aung | Developer</title>
   @vite('resources/css/app.css')
   @vite('resources/js/app.js')
 </head>
@@ -25,11 +26,17 @@
     </div>
     <div class="flex-auto w-5/6">
       <div class="fixed top-0 right-0 p-4 bg-transparent bg-opacity-0">
+        <div class="mainNav space-x-6">
+          <a href="/about">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
         <!-- The overlay -->
         <div id="myNav" class="overlay">
 
           <!-- Button to close the overlay navigation -->
-          <a href="javascript:void(0)" id="hamburger-close" class="closebtn" onclick="closeNav()">&times;</a>
+          {{-- <a href="javascript:void(0)" id="hamburger-close" class="closebtn" onclick="closeNav()">&times;</a> --}}
 
           <!-- Overlay content -->
           <div class="overlay-content">
@@ -41,7 +48,12 @@
 
         </div>
 
-        <button id="hamburger" onclick="setTextAnimation()">open</button>
+        {{-- <button id="hamburger" onclick="setTextAnimation()">open</button> --}}
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
       <div id="svg-parent" class="container mx-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
         {{-- <svg class="container mx-auto" id="name-animation" preserveAspectRatio="xMidYMid meet" width="627" height="113.301" viewBox="0 0 627 113.301" xmlns="http://www.w3.org/2000/svg">
