@@ -91,13 +91,6 @@
    
 }
 
-.icons{
-  max-width: 8%;
-}
-
-div .icons{
-  margin-left: 8px;
-}
 
 /* The Overlay (background) */
 .overlay {
@@ -146,12 +139,226 @@ div .icons{
   font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* Add this at the end of your app.css file */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.hamburger-box {
+  width: 35px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 50%;
+  transition: all 0.3s;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+/* Animation */
+.hamburger[aria-expanded="true"] .hamburger-inner {
+  transform: rotate(135deg);
+}
+
+.hamburger[aria-expanded="true"] .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+}
+
+.hamburger[aria-expanded="true"] .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-270deg);
+}
+
+.hamburger {
+  z-index: 5; /* Make sure this is higher than the overlay's z-index */
+  position: relative;
+}
+
+
+/* Change color to white when hamburger is in 'X' state for visibility */
+.hamburger[aria-expanded="true"] .hamburger-inner,
+.hamburger[aria-expanded="true"] .hamburger-inner::before,
+.hamburger[aria-expanded="true"] .hamburger-inner::after {
+  background-color: #fff; /* Or any color that is visible on your overlay */
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap
 @media screen and (max-height: 450px) {
+  
+} */
+
+@screen xxs{
+  .icons{
+    max-width: 25%;
+  }
+  
+  div .icons{
+    margin-left: 7px;
+  } 
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 18px;
+    right: 19px;
+  }
+  .mainNav{
+    display:none;
+  }
+}
+
+@screen xs{
+  .icons{
+    max-width: 25%;
+  }
+  
+  div .icons{
+    margin-left: 7px;
+  } 
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 18px;
+    right: 19px;
+  }
+  .mainNav{
+    display:none;
+  }
+}
+
+@screen sm{
+  .icons{
+    max-width: 3%;
+  }
+  
+  div .icons{
+    margin-left: 8px;
+  } 
   .overlay a {font-size: 20px}
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+  .mainNav{
+    display:none;
+  }
+}
+
+@screen md{
+  .icons{
+    max-width: 20%;
+  }
+  
+  div .icons{
+    margin-left: 8px;
+  } 
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .mainNav{
+    display:flex;
+  }
+  .hamburger{
+    display: none;
+  }
+}
+
+@screen lg{
+  .icons{
+    max-width: 14%;
+  }
+  
+  div .icons{
+    margin-left: 8px;
+  }  
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .mainNav{
+    display:flex;
+  }
+  .hamburger{
+    display: none;
+  }
+}
+
+@screen xl{
+  .icons{
+    max-width: 8%;
+  }
+  
+  div .icons{
+    margin-left: 8px;
+  }
+  .overlay a {font-size: 32px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  } 
+  .mainNav{
+    display:flex;
+  }
+  .hamburger{
+    display: none;
+  }
+}
+
+@screen 2xl{
+  .icons{
+    max-width: 8%;
+  }
+  
+  div .icons{
+    margin-left: 8px;
+  } 
+  .overlay a {font-size: 36px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  .mainNav{
+    display:flex;
+  }
+  .hamburger{
+    display: none;
   }
 }

@@ -16,8 +16,24 @@ function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeCo
 }
 setTextAnimation(0.2,6,1.5,'ease','#080808',false);
 
-document.getElementById("hamburger").addEventListener("click",openNav);
-document.getElementById("hamburger-close").addEventListener("click",closeNav);
+// document.getElementById("hamburger").addEventListener("click",openNav);
+// document.getElementById("hamburger-close").addEventListener("click",closeNav);
+
+document.getElementById("hamburger").addEventListener("click", function() {
+    var overlay = document.getElementById("myNav");
+    var isExpanded = this.getAttribute("aria-expanded") === "true";
+    
+    if (isExpanded) {
+        // Close overlay
+        overlay.style.width = "0%";
+        closeNav();
+        this.setAttribute("aria-expanded", "false");
+    } else {
+        // Open overlay
+        openNav();
+        this.setAttribute("aria-expanded", "true");
+    }
+});
 
 /* Open when someone clicks on the span element */
 function openNav() {
