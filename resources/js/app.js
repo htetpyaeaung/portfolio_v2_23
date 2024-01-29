@@ -1,4 +1,6 @@
+import { doc } from 'prettier';
 import './bootstrap';
+import 'flowbite';
 
 function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
     let paths = document.querySelectorAll("#svgGroup path");

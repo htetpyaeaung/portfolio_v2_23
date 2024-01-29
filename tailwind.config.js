@@ -5,13 +5,15 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {
       backgroundImage: {
        },
       fontFamily: {
-       inter: ["Inter","sans-serif"]
+       inter: ["Inter","sans-serif"],
+       franchise: ["Franchise","sans-serif"]
       },
     },
     screens: {
@@ -20,6 +22,8 @@ export default {
       ...defaultTheme.screens,
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
