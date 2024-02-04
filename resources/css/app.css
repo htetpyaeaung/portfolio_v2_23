@@ -2,363 +2,382 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Inter';
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src:
-        url('../public/fonts/Inter-Thin.woff2?v=3.19') format('woff2'),
-        url('../public/fonts/Inter-Thin.woff?v=3.19') format('woff');
 }
 
-@font-face {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src:
-        url('../public/fonts/Inter-Italic.woff2?v=3.19') format('woff2'),
-        url('../public/fonts/Inter-Italic.woff?v=3.19') format('woff');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src:
-        url('../public/fonts/Inter-Bold.woff2?v=3.19') format('woff2'),
-        url('../public/fonts/Inter-Bold.woff?v=3.19') format('woff');
-}
-
-/* -------------------------------------------------------
-  Variable font.
-  Usage:
-  
-    html { font-family: 'Inter', sans-serif; }
-    @supports (font-variation-settings: normal) {
-      html { font-family: 'Inter var', sans-serif; }
+/* Google chrome */
+@-webkit-keyframes svg-text-anim {
+    40% {
+        stroke-dashoffset: 0;
+        fill: transparent;
     }
-  */
-@font-face {
-    font-family: 'Inter var';
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: normal;
-    font-named-instance: 'Regular';
-    src: url('Inter-roman.var.woff2?v=3.19') format('woff2');
-}
-@font-face {
-    font-family: 'Inter var';
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: italic;
-    font-named-instance: 'Italic';
-    src: url('Inter-italic.var.woff2?v=3.19') format('woff2');
-}
-
- /* Google chrome */
- @-webkit-keyframes svg-text-anim {
-  40% {
-     stroke-dashoffset: 0;
-     fill: transparent;
-   }
-   60% {
-     stroke-dashoffset: 0;
-     fill: #000000;
-   }
-   100% {
-     stroke-dashoffset: 0;
-     fill: #000000;
-   }
-   
+    60% {
+        stroke-dashoffset: 0;
+        fill: #000000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #000000;
+    }
 }
 /* Most browsers */
 @keyframes svg-text-anim {
-  40% {
-     stroke-dashoffset: 0;
-     fill: transparent;
-   }
-   60% {
-     stroke-dashoffset: 0;
-     fill: #000000;
-   }
-   100% {
-     stroke-dashoffset: 0;
-     fill: #000000;
-   }
-   
+    40% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    60% {
+        stroke-dashoffset: 0;
+        fill: #000000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: #000000;
+    }
 }
-
 
 /* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 1); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0); /* Black fallback color */
+    background-color: rgba(0, 0, 0, 1); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
 }
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
 /* Add this at the end of your app.css file */
 .hamburger {
-  display: inline-block;
-  cursor: pointer;
-  transition: all 0.3s;
-  border: none;
-  background: transparent;
-  padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    background: transparent;
+    padding: 0;
 }
 
 .hamburger-box {
-  width: 35px;
-  height: 24px;
-  display: inline-block;
-  position: relative;
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
 }
 
 .hamburger-inner {
-  background-color: #000;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  top: 50%;
-  transition: all 0.3s;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    transition: all 0.3s;
 }
 
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: "";
-  background-color: #000;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  transition: all 0.3s;
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s;
 }
 
 .hamburger-inner::before {
-  top: -10px;
+    top: -10px;
 }
 
 .hamburger-inner::after {
-  bottom: -10px;
+    bottom: -10px;
 }
 
 /* Animation */
-.hamburger[aria-expanded="true"] .hamburger-inner {
-  transform: rotate(135deg);
+.hamburger[aria-expanded='true'] .hamburger-inner {
+    transform: rotate(135deg);
 }
 
-.hamburger[aria-expanded="true"] .hamburger-inner::before {
-  top: 0;
-  opacity: 0;
+.hamburger[aria-expanded='true'] .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
 }
 
-.hamburger[aria-expanded="true"] .hamburger-inner::after {
-  bottom: 0;
-  transform: rotate(-270deg);
+.hamburger[aria-expanded='true'] .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-270deg);
 }
 
 .hamburger {
-  z-index: 5; /* Make sure this is higher than the overlay's z-index */
-  position: relative;
+    z-index: 5; 
+    position: relative;
 }
 
-
-/* Change color to white when hamburger is in 'X' state for visibility */
-.hamburger[aria-expanded="true"] .hamburger-inner,
-.hamburger[aria-expanded="true"] .hamburger-inner::before,
-.hamburger[aria-expanded="true"] .hamburger-inner::after {
-  background-color: #fff; /* Or any color that is visible on your overlay */
+.hamburger[aria-expanded='true'] .hamburger-inner,
+.hamburger[aria-expanded='true'] .hamburger-inner::before,
+.hamburger[aria-expanded='true'] .hamburger-inner::after {
+    background-color: #fff; 
 }
+
+.footer-name {
+    bottom: 0%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: auto;
+}
+
+.verline {
+    border-left: 6px solid black;
+    height: 200px;
+}
+
+.logo{
+    max-width: 10%;
+    max-height: 30%;
+    margin-left: 2%;
+}
+
+#intro{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(213%2c 212%2c 210%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c534.322C98.078%2c524.743%2c149.149%2c414.349%2c231.595%2c360.369C313.06%2c307.031%2c428.07%2c301.441%2c480.759%2c219.555C534.978%2c135.291%2c536.649%2c23.357%2c510.721%2c-73.431C486.106%2c-165.32%2c398.15%2c-219.618%2c342.455%2c-296.739C279.81%2c-383.482%2c262.758%2c-516.398%2c162.956%2c-554.978C63.558%2c-593.402%2c-49.042%2c-535.932%2c-142.135%2c-484.066C-223.227%2c-438.886%2c-260.841%2c-348.589%2c-326.055%2c-282.528C-397.298%2c-210.36%2c-514.727%2c-175.469%2c-542.934%2c-78.062C-571.481%2c20.52%2c-521.251%2c125.718%2c-470.028%2c214.654C-421.806%2c298.38%2c-342.511%2c354.304%2c-262.617%2c408.64C-180.711%2c464.344%2c-98.584%2c543.951%2c0%2c534.322' fill='%23acaaa6'%3e%3c/path%3e%3cpath d='M1440 1035.6779999999999C1532.316 1032.606 1628.685 1024.163 1703.382 969.831 1776.376 916.738 1802.034 824.527 1841.739 743.468 1882.636 659.975 1946.104 580.933 1939.296 488.212 1932.346 393.56 1865.388 316.94 1805.042 243.68900000000002 1743.358 168.81400000000002 1672.862 104.90800000000002 1586.737 60.259000000000015 1485.244 7.643000000000029 1375.103-66.74199999999996 1264.901-36.33100000000002 1154.661-5.908999999999992 1092.329 111.04000000000002 1038.021 211.683 991.4649999999999 297.959 990.172 396.318 978.8879999999999 493.702 967.937 588.216 939.3910000000001 684.264 972.95 773.295 1007.5029999999999 864.9639999999999 1079.6979999999999 939.759 1165.108 987.741 1247.877 1034.24 1345.117 1038.835 1440 1035.6779999999999' fill='%23fefefe'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.mainNav > a {
+    position: relative;
+    display: inline-block; 
+}
+
+.mainNav > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px; 
+    background-color: black; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease-in-out; 
+    transform-origin: bottom left; 
+}
+
+.mainNav > a:hover::after {
+    transform: scaleX(1); /* Full underline on hover */
+}
+
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap
 @media screen and (max-height: 450px) {
   
 } */
 
-@screen xxs{
-  .icons{
-    max-width: 25%;
-  }
-  
-  div .icons{
-    margin-left: 7px;
-  } 
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 18px;
-    right: 19px;
-  }
-  .mainNav{
-    display:none;
-  }
+@screen xxs {
+    .icons {
+        max-width: 25%;
+    }
+
+    div .icons {
+        margin-left: 7px;
+    }
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 18px;
+        right: 19px;
+    }
+    .mainNav {
+        display: none;
+    }
 }
 
-@screen xs{
-  .icons{
-    max-width: 25%;
-  }
-  
-  div .icons{
-    margin-left: 7px;
-  } 
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 18px;
-    right: 19px;
-  }
-  .mainNav{
-    display:none;
-  }
+@screen xs {
+    .icons {
+        max-width: 25%;
+    }
+
+    div .icons {
+        margin-left: 7px;
+    }
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 18px;
+        right: 19px;
+    }
+    .mainNav {
+        display: none;
+    }
 }
 
-@screen sm{
-  .icons{
-    max-width: 3%;
-  }
-  
-  div .icons{
-    margin-left: 8px;
-  } 
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-  .mainNav{
-    display:none;
-  }
+@screen sm {
+    .icons {
+        max-width: 3%;
+    }
+
+    div .icons {
+        margin-left: 8px;
+    }
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .mainNav {
+        display: none;
+    }
 }
 
-@screen md{
-  .icons{
-    max-width: 20%;
-  }
-  
-  div .icons{
-    margin-left: 8px;
-  } 
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-  .mainNav{
-    display:flex;
-  }
-  .hamburger{
-    display: none;
-  }
+@screen md {
+    .icons {
+        max-width: 20%;
+    }
+
+    div .icons {
+        margin-left: 8px;
+    }
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .mainNav {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
 }
 
-@screen lg{
-  .icons{
-    max-width: 14%;
-  }
-  
-  div .icons{
-    margin-left: 8px;
-  }  
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-  .mainNav{
-    display:flex;
-  }
-  .hamburger{
-    display: none;
-  }
+@screen lg {
+    .icons {
+        max-width: 14%;
+    }
+
+    div .icons {
+        margin-left: 3.3%;
+    }
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .mainNav {
+        display: flex;
+        margin-top: 10px;
+    }
+    .hamburger {
+        display: none;
+    }
+    .verline {
+        margin-left: 4.1%;
+    }
 }
 
-@screen xl{
-  .icons{
-    max-width: 8%;
-  }
-  
-  div .icons{
-    margin-left: 8px;
-  }
-  .overlay a {font-size: 32px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  } 
-  .mainNav{
-    display:flex;
-  }
-  .hamburger{
-    display: none;
-  }
+@screen xl {
+    .icons {
+        max-width: 2%;
+    }
+
+    div .icons {
+        margin-left: 3.3%;
+    }
+    .overlay a {
+        font-size: 32px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .mainNav {
+        display: flex;
+        margin-top: 10px;
+    }
+    .hamburger {
+        display: none;
+    }
+    .verline {
+        margin-left: 4.1%;
+    }
 }
 
-@screen 2xl{
-  .icons{
-    max-width: 8%;
-  }
-  
-  div .icons{
-    margin-left: 8px;
-  } 
-  .overlay a {font-size: 36px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-  .mainNav{
-    display:flex;
-  }
-  .hamburger{
-    display: none;
-  }
+@screen 2xl {
+    .icons {
+        max-width: 2%;
+    }
+
+    div .icons {
+        margin-left: 3.3%;
+    }
+    .overlay a {
+        font-size: 36px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .mainNav {
+        display: flex;
+        margin-top: 10px;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .verline {
+        margin-left: 4.1%;
+    }
 }
