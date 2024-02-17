@@ -49,3 +49,45 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     document.getElementById("svg-parent").style.display = "block";
 }
+
+// Debounce function to limit how often a function is executed
+function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  }
+  
+  // Function to handle the scroll event
+  function onScroll() {
+    // Get the current scroll position
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    
+    // Get the target element's top position relative to the document
+    const target = document.getElementById('aboutMeHeader');
+    const targetPosition = target.offsetTop;
+    const targetHeight = target.offsetHeight; // Height of the element
+    
+    // Check if we have scrolled past the target element
+    if (scrollPosition > targetPosition + targetHeight) {
+      console.log('Scrolled past the About Me section!');
+      // Perform any action after scrolling past the target element
+      document.getElementById('logoDiv').style.display = 'none';
+      document.getElementById('navmain').style.display = 'none';
+    } else {
+      // If scrolled back up before the target element, revert the action
+      document.getElementById('logoDiv').style.display = 'block';
+      document.getElementById('navmain').style.display = 'block';
+    }
+  }
+  
+  // Attach the scroll event listener to the window with debounce
+  window.addEventListener('scroll', debounce(onScroll, 100));
