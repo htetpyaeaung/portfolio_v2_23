@@ -10,6 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   @vite('resources/css/app.css')
   @vite('resources/js/app.js')
+  <style>
+    #intro{
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(213%2c 212%2c 210%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c534.322C98.078%2c524.743%2c149.149%2c414.349%2c231.595%2c360.369C313.06%2c307.031%2c428.07%2c301.441%2c480.759%2c219.555C534.978%2c135.291%2c536.649%2c23.357%2c510.721%2c-73.431C486.106%2c-165.32%2c398.15%2c-219.618%2c342.455%2c-296.739C279.81%2c-383.482%2c262.758%2c-516.398%2c162.956%2c-554.978C63.558%2c-593.402%2c-49.042%2c-535.932%2c-142.135%2c-484.066C-223.227%2c-438.886%2c-260.841%2c-348.589%2c-326.055%2c-282.528C-397.298%2c-210.36%2c-514.727%2c-175.469%2c-542.934%2c-78.062C-571.481%2c20.52%2c-521.251%2c125.718%2c-470.028%2c214.654C-421.806%2c298.38%2c-342.511%2c354.304%2c-262.617%2c408.64C-180.711%2c464.344%2c-98.584%2c543.951%2c0%2c534.322' fill='%23acaaa6'%3e%3c/path%3e%3cpath d='M1440 1035.6779999999999C1532.316 1032.606 1628.685 1024.163 1703.382 969.831 1776.376 916.738 1802.034 824.527 1841.739 743.468 1882.636 659.975 1946.104 580.933 1939.296 488.212 1932.346 393.56 1865.388 316.94 1805.042 243.68900000000002 1743.358 168.81400000000002 1672.862 104.90800000000002 1586.737 60.259000000000015 1485.244 7.643000000000029 1375.103-66.74199999999996 1264.901-36.33100000000002 1154.661-5.908999999999992 1092.329 111.04000000000002 1038.021 211.683 991.4649999999999 297.959 990.172 396.318 978.8879999999999 493.702 967.937 588.216 939.3910000000001 684.264 972.95 773.295 1007.5029999999999 864.9639999999999 1079.6979999999999 939.759 1165.108 987.741 1247.877 1034.24 1345.117 1038.835 1440 1035.6779999999999' fill='%23fefefe'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
   <div class="bg-cover bg-stone-300 w-full h-screen flex relative" id="intro">
@@ -19,13 +26,13 @@
         {{-- <p>Text</p> --}}
       </a>
     </div>
-    <div class="flex-auto">
+    <div>
       <div class="fixed top-0 right-0 p-4 bg-transparent" id='navContainer'>
         <div class="mainNav space-x-6">
           <a href="about">About</a>
-          <a href="#projects">Services</a>
-          <a href="#">Clients</a>
-          <a href="#contact">Contact</a>
+          <a href="/projects">Projects</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
         </div>
         <!-- The overlay -->
         <div id="myNav" class="overlay">
@@ -35,10 +42,10 @@
 
           <!-- Overlay content -->
           <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
           </div>
 
         </div>
@@ -90,7 +97,7 @@
 
 
      
-    <h1 class="flex absolute footer-name mx-auto text-center content-center">
+    <h1 class="flex absolute footer-name mx-auto text-center content-center xxs:text-xs xs:text-sm md:text-base">
       @php
         echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
       @endphp
