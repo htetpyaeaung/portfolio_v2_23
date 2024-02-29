@@ -21,6 +21,13 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/projects', function () {
+    return view('projects');
+});
+
+Route::get('/test', function () {
+    return view('masktest');
+});
 
 Route::get('/tail', function () {
     return view('app');
