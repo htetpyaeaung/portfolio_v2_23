@@ -40,14 +40,14 @@ document.getElementById("hamburger").addEventListener("click", function() {
 /* Open when someone clicks on the span element */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    document.getElementById("svg-parent").style.display = "none";
+    // document.getElementById("svg-parent").style.display = "none";
 }
 
   
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-    document.getElementById("svg-parent").style.display = "block";
+    // document.getElementById("svg-parent").style.display = "block";
 }
 
 // Debounce function to limit how often a function is executed
@@ -66,27 +66,23 @@ function debounce(func, wait, immediate) {
     };
   }
   
-  // Function to handle the scroll event
-  function onScroll() {
-    // Get the current scroll position
-    const scrollPosition = window.scrollY || window.pageYOffset;
-    
-    // Get the target element's top position relative to the document
-    const target = document.getElementById('aboutMeHeader');
-    const targetPosition = target.offsetTop;
-    const targetHeight = target.offsetHeight; // Height of the element
-    
-    // Check if we have scrolled past the target element
-    if (scrollPosition > targetPosition + targetHeight) {
-      console.log('Scrolled past the About Me section!');
-      // Perform any action after scrolling past the target element
-      document.getElementById('logoDiv').style.display = 'none';
-      document.getElementById('navmain').style.display = 'none';
+function onScroll() {
+    const scrollPosition = window.scrollY;
+    const target = document.getElementById('sectionHeader');
+    if (target !== null) {
+      const targetPosition = target.offsetTop;
+      const targetHeight = target.offsetHeight; // Height of the element
+      if (scrollPosition > targetPosition + targetHeight) {
+          document.getElementById('logoDiv').style.display = 'none';
+          document.getElementById('navmain').style.display = 'none';
+      } else {
+          document.getElementById('logoDiv').style.display = 'block';
+          document.getElementById('navmain').style.display = 'block';
+      }
     } else {
-      // If scrolled back up before the target element, revert the action
       document.getElementById('logoDiv').style.display = 'block';
       document.getElementById('navmain').style.display = 'block';
-    }
+}
   }
   
   // Attach the scroll event listener to the window with debounce
