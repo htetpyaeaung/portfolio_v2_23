@@ -13,7 +13,7 @@ export default {
        },
       fontFamily: {
        inter: ["Inter","sans-serif"],
-       franchise: ["Franchise","sans-serif"]
+       scoville: ["Scoville", "sans-serif"],
       },
     },
     screens: {
