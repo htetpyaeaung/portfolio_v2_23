@@ -12,7 +12,7 @@
   @vite('resources/js/app.js')
 </head>
 <body class="bg-cover bg-stone-300 bg-no-repeat">
-  <div class="w-full h-screen flex relative" id="intro">
+  <div class="w-full xxs:h-full flex relative" id="intro">
     <div class="container fixed left-0 top-0 p-4" id="logoDiv">
       <a href="/">
         <img src="{{ asset('storage/images/logo-bg.png') }}" class="logo"/>
@@ -51,94 +51,120 @@
         </button>
       </div>
     </div>
-    <div class="w-full h-3/4 mx-auto flex flex-wrap flex-row absolute content-center lg:top-28">
-      <div class="flex-auto w-1/2 h-full">
+    <div class="w-full mx-auto flex flex-wrap h-auto xxs:mt-24 lg:h-3/4 lg:mt-28">
+      <div class="flex flex-col w-full xl:w-1/2 lg:h-full xxs:h-auto justify-center p-4">
         <div class="profile">
-          <img loading="lazy" src="{{ asset('storage/images/fullprof.jpg') }}"/>
+          <img loading="lazy" src="{{ asset('storage/images/fullprof.jpg') }}" class="rounded-full" style="max-width: 100%; height: auto; z-index: -1;"/>
         </div>
       </div>
-      <div class="flex-auto w-1/2 h-full">
-        <h1 class="section-headers text-4xl" id="aboutMeHeader">Get to Know Me</h1>
-        <p class="my-4">As a recent graduate with a Bachelor's degree in Computer Science, I am excited to bring my technical skills and passion for problem-solving to the professional world. <br/><br/>
-          Throughout my studies, I have gained a strong foundation in programming languages such as Java, Python, and C++, as well as experience in data analysis and machine learning.<br/><br/>
-          In addition to my technical expertise, I have also developed strong communication and teamwork skills through various group projects and internships. I have a passion for collaborating with others and finding creative solutions to complex problems.<br/><br/>
-          Outside of my academic pursuits, I am an avid reader and enjoy staying up-to-date on the latest trends and technologies in the tech industry. In my free time, you can find me volunteering at local events and organizations, as well as exploring new hobbies and interests.<br/><br/>
-          I am eager to leverage my skills and experience to make a positive impact in a dynamic and innovative company.</p>
-          <h3 class="font-bold my-4">My professional Certifications</h3>
-          <div class="flex flex-row">
-            <a data-tooltip-target="tooltip-left" data-tooltip-placement="left" href="https://www.credly.com/badges/4ba8c54d-0899-4b75-9ac8-56a21bc2f7dd/linked_in_profile" class="certifications">
+      <div class="flex flex-col w-full xl:w-1/2 lg:h-full xxs:h-auto p-4">
+        <h1 class="font-scoville text-4xl" id="sectionHeader">Get to Know Me</h1>
+        <p class="my-4">Hi there, I am Htet Pyae - a Solutions Architect & Developer focused on creating dynamic and user-centric applications that meet precise business requirements.
+        I was born & raised in Yangon, Myanmar but currently based in <span class="font-bold">Adelaide, Australia.</span> Graduated with Bachelor's degree in Computer Science, I am excited to bring my technical skills and passion for problem-solving to the professional world. <br/><br/>
+        Currently, I am working as an Application Developer at <span class="font-bold">Cara.</span> I've led a software integration project, architecting an Enterprise Service Bus system for seamless connectivity between critical business systems leveraging third-party and internal API integrations. Throughout my studies as well as in my current job, I have gained a strong foundation in programming languages such as Java, Python, and C++, as well as experience in data analysis and machine learning.<br/><br/>
+        In addition to my technical expertise, I have also developed strong communication and teamwork skills through various group projects and internships. I have a passion for collaborating with others and finding creative solutions to complex problems.<br/><br/>
+        Outside of my academic pursuits, I am an avid reader and enjoy staying up-to-date on the latest trends and technologies in the tech industry. In my free time, you can find me volunteering at local events and organizations, as well as exploring new hobbies and interests.
+        </p>
+        <h3 class="font-scoville text-xl tracking-wide my-4">Technologies I've worked with</h3>
+        <div class="flex flex-col flex-wrap gap-2">
+          <div class="gap-3">
+            <h3 class="mb-1">Languages</h3>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Python</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">C++</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Php</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Java</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">SQL</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Javascript</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">HTML/CSS</span>
+          </div>
+          <div>
+            <h3 class="mb-1">Libraries & Frameworks</h3>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Laravel</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Angular JS</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Tailwind</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Vue</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Postgres</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">MariaDB</span>
+          </div>
+          <div>
+            <h3 class="mb-1">Tools & Platforms</h3>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Git</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">JIRA</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">AWS</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">WordPres</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Figma</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Docker</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">VMware</span>
+          </div>
+        </div>
+        <h3 class="font-scoville text-xl tracking-wide my-4">My professional Certifications</h3>
+        <div class="flex flex-row flex-wrap gap-4">
+          <div>
+            <a data-tooltip-target="tooltip-left" data-tooltip-placement="left" href="https://www.credly.com/badges/4ba8c54d-0899-4b75-9ac8-56a21bc2f7dd/linked_in_profile" target="_blank" class="certifications">
               <div class="tooltip-arrow" data-popper-arrow></div>
-              <img src="{{ asset('storage/images/architect.png') }}" width="180" height="180"/>
+              <img id="architect" src="{{ asset('storage/images/architect-new.png') }}" width="180" height="180"/>
             </a>
-            <a data-tooltip-target="tooltip-animation" href="https://www.credly.com/badges/87c4d954-353d-42b1-8745-9b5116cfe24a/linked_in_profile">
-                <div class="tooltip-arrow" data-popper-arrow></div>
-              <img src="{{ asset('storage/images/quest.png') }}" width="180" height="180"/>
-            </a>
-
-            <div id="tooltip-animation" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-              Verify Me
-              <div class="tooltip-arrow" data-popper-arrow></div>
-            </div>
             <div id="tooltip-left" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
               Verify Me
               <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
           </div>
+          <div>
+            <a data-tooltip-target="tooltip-animation" href="https://www.credly.com/badges/87c4d954-353d-42b1-8745-9b5116cfe24a/linked_in_profile" target="_blank">
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            <img src="{{ asset('storage/images/quest.png') }}" width="180" height="180"/>
+            </a>
+            <div id="tooltip-animation" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+              Verify Me
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
           
+          
+          
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="w-full flex flex-row relative flex-wrap" style="height: 90vh; margin-top: -1%;">
-    <div class="flex flex-auto w-1/2 flex-wrap relative">
-      <h1 class="absolute section-headers text-4xl left-1/2" id="aboutMeHeader">My Work Timeline So Far</h1>
+  <div class="w-full h-full flex flex-wrap content-center relative">
+    <div class="flex w-full lg:w-1/2 p-4 items-start xxs:justify-start md:justify-end">
+      <h1 class="relative font-scoville tracking-wide text-4xl xxs:left-1/4 md:left-0 lg:left-1/4 xl:left-0" id="aboutMeHeader">Experience</h1>
       
-      <ol class="relative border-s mx-11 border-gray-200 dark:border-gray-700 mt-auto">                  
+      <ol class="relative border-s xxs:mx-0 md:mx-11 border-gray-200 dark:border-gray-700 mt-20 exp">                  
           <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <time class="mb-1 text-sm font-normal leading-none dark:text-gray-500">January 2020 - January 2021</time>
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Web Developer @ Orient Crown Interior Design Studio</h3>
-            <p class="text-base font-normal dark:text-gray-400">- Designed and implemented website front and backend utilizing WordPress, SEO, andGoogle Analytics, raising customer engagement rate by 45%. <br/>
-              - Engaged closely with management team and other departments in quarterly designreviews and feedback. <br/>
-              - Diagnosed and implemented solutions for bugs and performance issues, increasingwebsite performances by 65%. <br/></p>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Orient Crown Interior Design Studio</h3>
+            <p class="text-base font-normal dark:text-gray-400">Web Developer</p>
           </li>
           <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <time class="mb-1 text-sm font-normal leading-none dark:text-gray-500">July - November 2021</time>
-            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Analyst Developer @ Thermo Fisher Scientific</h3>
-            <p class="text-base font-normal dark:text-gray-400">- Conducted time study of all the manufacturing processes of different products from the company. <br/>
-              - Analyzed and presented analysis of collected data to management team, resulted in theirmanual scheduling process and labor usage being optimized.<br/>
-              - Developed Maintenance Information System and documentation which increased thebusiness workflow by 60%.<br/>
-              - Researched and recommended better scheduling solutions that can adapt and enhancetheir manual scheduling process.<br/>
-              - Prepared technical documentation for the maintenance information system.</p>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Thermo Fisher Scientific</h3>
+            <p class="text-base font-normal dark:text-gray-400">Analyst Developer</p>
           </li>
           <li class="mb-10 ms-4">
               <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
               <time class="mb-1 text-sm font-normal leading-none dark:text-gray-500">July 2022 - Current</time>
-              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Application Developer @ Cara Inc.</h3>
-              <p class="text-base text-left font-normal dark:text-gray-400">- Led an integration project, architecting an Enterprise Service Bus system for seamless connectivity between critical business systems leveraging third-party and internal API integrations.<br/>
-                - Implemented a web application to manage the Integration System enhancing user access andsecurity through SSO while streamlining system administration tasks.<br/>
-                - Maintained and developed features for in-house ERP system according to stakeholder businessrequirements.<br/>
-                - Collaborate with business analysts, project managers, cross-functional teams, and other externalstakeholders to transform business concepts into production-ready software for stakeholders.<br/>
-                - Demonstrated adept problem-solving skills by proactively resolving user-reported system bugs.</p>
+              <h3 class="text-lg font-bold text-gray-900 dark:text-white">Cara Inc.</h3>
+              <p class="text-base text-left font-normal dark:text-gray-400">Application Developer</p>
           </li>
       </ol>
-
-
     </div>
-    <div class="flex flex-auto w-1/2 flex-wrap content-center" id="t-filler">
-      <img class="relative left-1/4" loading="lazy" src="{{ asset('storage/images/timeline_filler_work.png') }}"/>
+    <div class="flex w-full lg:w-1/2 p-4 items-center justify-center" id="t-filler">
+      <img class="relative" loading="lazy" src="{{ asset('storage/images/timeline_filler_work.png') }}"/>
     </div>
   </div>
   
-  <div class="w-full flex flex-row relative flex-wrap">
-    <div class="flex flex-auto w-1/2 flex-wrap relative content-center" id="t-filler">
-      <img class="relative left-1/4" loading="lazy" src="{{ asset('storage/images/timeline_filler_education.png') }}"/>
+  <div class="w-full h-auto flex flex-wrap-reverse content-center relative">
+    <div class="flex w-full lg:w-1/2 p-4 items-start xxs:justify-center lg:justify-end" id="t-filler">
+      <img loading="lazy" src="{{ asset('storage/images/timeline_filler_education.png') }}" class="max-w-full h-auto"/>
     </div>
-    <div class="flex flex-auto w-1/2 flex-wrap content-center" >
-      <h1 class="absolute section-headers text-4xl left-1/2 text-center" id="aboutMeHeader">Education History</h1>
+    <div class="flex flex-auto w-1/2 flex-wrap" >
+      <h1 class="relative font-scoville tracking-wide text-4xl xxs:left-1/4 lg:left-28" id="aboutMeHeader">Education</h1>
       
-      <ol class="relative border-s border-gray-200 dark:border-gray-700 mt-20">                  
+      <ol class="relative border-s mx-0 border-gray-200 dark:border-gray-700 xxs:mt-8 md:mt-20 lg:mt-0 xl:mt-20 xxs:ml-20 md:ml-0">                  
           <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <time class="mb-1 text-sm font-normal leading-none dark:text-gray-500">February 2019</time>
@@ -161,41 +187,37 @@
       <span class="arrow ml-2 inline-block transform transition duration-500 ease-in-out">↓</span>
     </a>
   </section>
-  
-  
-
-
-  
 
 <footer class="bottom-0 left-0 z-20 w-full p-4 font-bold bg-stone-300 md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
   <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">@php
     echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
   @endphp
-   Crafted with &#10084; by Htet Pyae Aung
+   Crafted with &#10084; by Htet Pyae Aung | Illustrations from <a href="https://absurd.design">absurd.design</a>
   </span>
-  <ul class="flex flex-wrap items-center mt-3 text-sm  text-gray-500 dark:text-gray-400 sm:mt-0">
+  <ul class="flex flex-wrap items-center mt-3 text-sm gap-3 footer-icons text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>
-          <a href="/about" class="hover:underline me-4 md:me-6">About</a>
+        <a href="https://www.twitter.com" target="_blank">
+          <svg class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M13.8 10.5 20.7 2h-3l-5.3 6.5L7.7 2H1l7.8 11-7.3 9h3l5.7-7 5.1 7H22l-8.2-11.5Zm-2.4 3-1.4-2-5.6-7.9h2.3l4.5 6.3 1.4 2 6 8.5h-2.3l-4.9-7Z"/>
+          </svg>
+        </a>
       </li>
       <li>
-          <a href="/projects" class="hover:underline me-4 md:me-6">Projects</a>
+        <a href="https://github.com/htetpyaeaung" target="_blank">
+          <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M12 2c-2.4 0-4.7.9-6.5 2.4a10.5 10.5 0 0 0-2 13.1A10 10 0 0 0 8.7 22c.5 0 .7-.2.7-.5v-2c-2.8.7-3.4-1.1-3.4-1.1-.1-.6-.5-1.2-1-1.5-1-.7 0-.7 0-.7a2 2 0 0 1 1.5 1.1 2.2 2.2 0 0 0 1.3 1 2 2 0 0 0 1.6-.1c0-.6.3-1 .7-1.4-2.2-.3-4.6-1.2-4.6-5 0-1.1.4-2 1-2.8a4 4 0 0 1 .2-2.7s.8-.3 2.7 1c1.6-.5 3.4-.5 5 0 2-1.3 2.8-1 2.8-1 .3.8.4 1.8 0 2.7a4 4 0 0 1 1 2.7c0 4-2.3 4.8-4.5 5a2.5 2.5 0 0 1 .7 2v2.8c0 .3.2.6.7.5a10 10 0 0 0 5.4-4.4 10.5 10.5 0 0 0-2.1-13.2A9.8 9.8 0 0 0 12 2Z" clip-rule="evenodd"/>
+          </svg>    
+        </a>  
       </li>
       <li>
-          <a href="/blog" class="hover:underline me-4 md:me-6">Blog</a>
-      </li>
-      <li>
-          <a href="/contact" class="hover:underline">Contact</a>
+        <a href="https://www.linkedin.com/in/htetpyaeaung-charles/" target="_blank">
+          <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M12.5 8.8v1.7a3.7 3.7 0 0 1 3.3-1.7c3.5 0 4.2 2.2 4.2 5v5.7h-3.2v-5c0-1.3-.2-2.8-2.1-2.8-1.9 0-2.2 1.3-2.2 2.6v5.2H9.3V8.8h3.2ZM7.2 6.1a1.6 1.6 0 0 1-2 1.6 1.6 1.6 0 0 1-1-2.2A1.6 1.6 0 0 1 6.6 5c.3.3.5.7.5 1.1Z" clip-rule="evenodd"/>
+            <path d="M7.2 8.8H4v10.7h3.2V8.8Z"/>
+          </svg>
+        </a> 
       </li>
   </ul>
 </footer>
-
-
-
-    {{-- <h1 class="flex absolute footer-name mx-auto text-center content-center xxs:text-xs xs:text-sm md:text-base">
-      @php
-        echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
-      @endphp
-       Crafted with &#10084; by Htet Pyae Aung
-    </h1> --}}
 </body>
 </html
