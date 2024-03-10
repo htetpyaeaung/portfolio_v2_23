@@ -30,7 +30,7 @@ class ProjectsController extends Controller
                 "id" => "portfolio-ocstudio",
                 "title" => "Orient Crown Studio Portfolio",
                 "description" => "Showcasing Elegance: The Orient Crown Design Portfolio",
-                "tags" => ["Product Design", "Full Stack"],
+                "tags" => ["Web Design", "Full Stack"],
                 "image" => "orient.png"
             ],
             [
