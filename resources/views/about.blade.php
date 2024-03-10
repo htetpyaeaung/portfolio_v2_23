@@ -69,32 +69,32 @@
         <div class="flex flex-col flex-wrap gap-2">
           <div class="gap-3">
             <h3 class="mb-1">Languages</h3>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Python</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">C++</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Php</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Java</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">SQL</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Javascript</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">HTML/CSS</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Python</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">C++</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Php</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Java</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">SQL</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Javascript</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">HTML/CSS</span>
           </div>
           <div>
             <h3 class="mb-1">Libraries & Frameworks</h3>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Laravel</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Angular JS</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Tailwind</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Vue</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Postgres</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">MariaDB</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Laravel</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Angular JS</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Tailwind</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Vue</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Postgres</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">MariaDB</span>
           </div>
           <div>
             <h3 class="mb-1">Tools & Platforms</h3>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Git</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">JIRA</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">AWS</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">WordPres</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Figma</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Docker</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-1 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">VMware</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Git</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">JIRA</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">AWS</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">WordPres</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Figma</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Docker</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">VMware</span>
           </div>
         </div>
         <h3 class="font-scoville text-xl tracking-wide my-4">My professional Certifications</h3>
@@ -119,9 +119,6 @@
               <div class="tooltip-arrow" data-popper-arrow></div>
             </div>
           </div>
-          
-          
-          
         </div>
       </div>
     </div>
