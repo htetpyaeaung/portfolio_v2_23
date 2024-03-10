@@ -24,9 +24,22 @@ Route::get('/about', function () {
 
 Route::get('/projects', [ProjectsController::class, 'processProjects']);
 
-Route::get('/test', function () {
-    return view('masktest');
+Route::get('/cara-integration', function () {
+    return view('cara');
 });
+Route::get('/mis-thermofisher', function () {
+    return view('thermo');
+});
+Route::get('/portfolio-ocstudio', function () {
+    return view('ocportfolio');
+});
+Route::get('/nuber', function () {
+    return view('nuber');
+});
+Route::get('/sawater', function () {
+    return view('sawater');
+});
+
 
 Route::get('/tail', function () {
     return view('app');
