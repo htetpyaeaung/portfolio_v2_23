@@ -40,14 +40,31 @@ document.getElementById("hamburger").addEventListener("click", function() {
 /* Open when someone clicks on the span element */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    // document.getElementById("svg-parent").style.display = "none";
+    const targetElementHome = document.getElementById("svg-parent");
+    const targetElementproject = document.getElementById("sectionHeader");
+    const targetprojectItems = document.getElementsByClassName("project-item");
+    if(targetElementHome != null){
+      document.getElementById("svg-parent").style.zIndex = "-10";
+    }
+    if(targetElementproject != null){
+      document.getElementById("sectionHeader").style.zIndex = "-1";
+    }
+    if(targetprojectItems != null){
+      [...document.getElementsByClassName("project-item")].forEach(element => {
+        element.style.zIndex = "-1";
+      });
+    }
 }
 
   
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-    // document.getElementById("svg-parent").style.display = "block";
+    const targetElementHome = document.getElementById("svg-parent");
+    if(targetElementHome != null){
+      document.getElementById("svg-parent").style.zIndex = "1";
+    }
+    // document.getElementById("footer_name").style.zIndex = "1s";
 }
 
 // Debounce function to limit how often a function is executed
