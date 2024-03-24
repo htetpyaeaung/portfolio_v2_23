@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ asset('storage/images/favicon.ico') }}">
-  <title>Htet Pyae Aung | Developer</title>
+  <title>Cara Integration | Projects</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -63,17 +63,17 @@
         </div>
 
         <div class="flex xxs:flex-wrap md:flex-nowrap mx-auto w-full h-full text-center justify-center items-center xxs:space-y-2 md:space-y-0 xxs:space-x-1 md:space-x-2" id="project_hero">
-            <div class="flex flex-col w-full h-1/2 justify-center border-2 border-black py-12">
+            <div class="flex flex-col w-full h-1/2 justify-center py-12">
                 <h2 class="font-bold text-2xl py-3">Role</h2>
-                <h2 class="text-md py-3">Lead Application Developer</h2>
+                <h2 class="text-md py-3">Application Developer</h2>
                 <h3 class="text-sm">Custom Integration, Testing, APIs, Salesforce, Laravel, MariaDB, Redis, AWS</h3>
             </div>
-            <div class="flex flex-col justify-center w-full h-1/2 border-2 border-black py-12">
+            <div class="flex flex-col justify-center w-full h-1/2 py-12">
                 <h2 class="font-bold text-2xl py-3">Team</h2>
                 <h2 class="text-md py-3">Development team, Business Analysts & Project Manager</h2>
                 <h3 class="text-sm">Managed by Head of IT</h3>
             </div>
-            <div class="flex flex-col justify-center text-center w-full h-1/2 border-2 border-black py-12">
+            <div class="flex flex-col justify-center text-center w-full h-1/2 py-12">
                 <h2 class="font-bold text-2xl py-3">Duration</h2>
                 <h2 class="text-md py-3">February - September 2023</h2>
                 <h2 class="text-sm">(8 months)</h2>
@@ -83,16 +83,23 @@
         <div class="flex flex-col mx-auto w-full text-center bg-white">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 text-center justify-center items-start" id="project_hero" style="height: 40vh;">
                 <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto text-center justify-left items-start">
-                    <h1 class="font-scoville text-5xl" id="sectionHeader">Overview</h1>
-                    <p class="mt-2">A Custom Integration System, designed to minimize manual data entry, enhance operational efficiency, and ensure consistent data across all SaaS platforms utilized by CARA.</p>
+                    <h1 class="font-scoville text-5xl" id="sectionHeader">Background</h1>
+                    <p class="mt-2">Cara is a leading NDIS disability service provider working alongside people with disability across metropolitan Adelaide and regional South Australia. <a href="https://www.cara.org.au" class="underline">Learn More about what CARA does.</a></p><br>
+                    <p>The goal of this project to identify the potential integration points between the critical business systems use across the business and to drastically reduce manual work by Staff.</p>
                 </div>
             </div>
         </div>
-        <div class="flex flex-col mx-auto w-full text-center  bg-orange-950 text-white">
-            <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 text-center justify-center items-start" id="project_hero" style="height: 40vh;">
-                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto text-center justify-center items-start">
+        <div class="flex flex-col mx-auto w-full bg-orange-950 text-white">
+            <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 justify-center items-start" id="project_hero" style="height: 40vh;">
+                {{-- <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-center items-start">
                     <h1 class="font-scoville text-5xl" id="sectionHeader">Problem</h1>
-                    <p class="mt-2">A Custom Integration System, designed to minimize manual data entry, enhance operational efficiency, and ensure consistent data across all SaaS platforms utilized by CARA.</p>
+                    <p class="mt-2">Before the integration system, the employee onboarding and offboarding data flow take almost 30 minutes for HR department. 
+                        HR staff has to manually enter data across different systems such as rostering, HR and ERP systems and also has to ensure data are consistence and correct.</p>
+                </div> --}}
+                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
+                    <h1 class="font-scoville text-5xl" id="sectionHeader">Problem</h1>
+                    <p class="mt-2">Before the integration system, the employee onboarding and offboarding data flow take almost 30 minutes for HR department. 
+                        HR staff has to manually enter data across rostering, HR and ERP systems and also has to ensure data are consistence and correct.</p>
                 </div>
             </div>
         </div>
