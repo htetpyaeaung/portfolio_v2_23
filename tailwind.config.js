@@ -15,6 +15,9 @@ export default {
        inter: ["Inter","sans-serif"],
        scoville: ["Scoville", "sans-serif"],
       },
+      colors: {
+        'custom-gray': '#cac3b1'
+      },
     },
     screens: {
       'xs': '475px',
