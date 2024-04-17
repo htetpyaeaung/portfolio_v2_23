@@ -1,6 +1,6 @@
-## About this project
+## About
 
-This is portfolio website project which I named it as portfolio_v2 as there was a previous version. It is still in work but progressing gradually. 
+This is a project repo for my updated portfolio website. It is still in work but progressing gradually. 
 
 ## How to clone and run this project
 
@@ -32,4 +32,4 @@ This is portfolio website project which I named it as portfolio_v2 as there was 
 
 Website Idea was inspired by **Person1** and **Person2**
 
-** Developed by Htet Pyae Aung | 2024 **
+**Developed by Htet Pyae Aung | 2024**
