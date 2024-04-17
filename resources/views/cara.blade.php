@@ -11,7 +11,7 @@
   @vite('resources/css/app.css')
   @vite('resources/js/app.js')
 </head>
-<body class="bg-cover bg-stone-300 bg-no-repeat">
+<body class="bg-cover bg-stone-300 bg-no-repeat font-inter">
     <div class="w-full xxs:h-full flex relative" id="intro">
         <div class="container fixed left-0 top-0 p-4" id="logoDiv">
         <a href="/">
