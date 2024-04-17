@@ -3,5 +3,5 @@
 !.woff2
 !.woff
 !.css
-!fonts/
-!images/
+!fonts/**
+!images/**
