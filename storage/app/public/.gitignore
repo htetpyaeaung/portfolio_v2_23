@@ -3,5 +3,14 @@
 !.woff2
 !.woff
 !.css
-!fonts/**
-!images/**
+!fonts
+!fonts/*.woff2
+!fonts/*.woff
+!fonts/*.ttf
+!fonts/*.css
+!fonts/*.otf
+!images
+!images/*.png
+!images/*.jpg
+!images/*.ico
+!images/*.svg
