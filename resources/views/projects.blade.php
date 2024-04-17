@@ -12,7 +12,7 @@
       @foreach ($projectItems as $item)
       #{{ $item['id'] }}:before {
             /* background-image: url('{{ asset('storage/images/'.$item['image']) }}'); */
-            background: white url('{{ asset('storage/images/'.$item['image']) }}') no-repeat center center / contain;
+            background: white url('{{ asset('storage/images/'.$item['image']) }}') no-repeat left center / contain;
             content: "";
             position: absolute;
             top: 0;
@@ -78,7 +78,7 @@
 
   @foreach ($projectItems as $item)
     <div class="flex mx-auto xxs:w-11/12 lg:w-10/12 p-4 text-center xxs:justify-center items-center lg:justify-end bg-white shadow-2xl mt-9 project-item" id="{{ $item['id'] }}">
-      <div class="flex text-white backdrop-blur-sm items-center z-10 text-center flex-col xxs:justify-end lg:justify-center xxs:w-3/4 xxs:h-4/5 lg:w-2/5 lg:h-2/4">
+      <div class="flex text-white items-center z-10 text-center flex-col xxs:justify-end lg:justify-center xxs:w-3/4 xxs:h-4/5 lg:w-2/5 lg:h-2/4">
         <h2 class="xxs:text-2xl lg:text-3xl font-extrabold">{{ $item['title'] }}</h2>
         <p>{{ $item['description'] }}</p>
         <div class="w-full h-auto mx-auto flex items-center justify-center mt-2">
