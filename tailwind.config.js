@@ -16,7 +16,8 @@ export default {
        scoville: ["Scoville", "sans-serif"],
       },
       colors: {
-        'custom-gray': '#cac3b1'
+        'custom-gray': '#cac3b1',
+        'dark-gold': '#996515'
       },
     },
     screens: {
