@@ -24,7 +24,7 @@ class ProjectsController extends Controller
                 "title" => "New System at Thermo Fisher",
                 "description" => "Improving the efficiencies of machine maintenance",
                 "tags" => ["Product Design", "Full-stack"],
-                "image" => "ThermoFisher-logo.jpg"
+                "image" => "thermo-fisher-scientific.svg"
             ],
             [
                 "id" => "portfolio-ocstudio",
