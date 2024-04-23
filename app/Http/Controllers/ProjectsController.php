@@ -20,14 +20,14 @@ class ProjectsController extends Controller
                 "image" => "cara.png"
             ],
             [
-                "id" => "mis-thermofisher",
+                "id" => "thermofisher",
                 "title" => "New System at Thermo Fisher",
                 "description" => "Improving the efficiencies of machine maintenance",
                 "tags" => ["Product Design", "Full-stack"],
                 "image" => "thermo-fisher-scientific.svg"
             ],
             [
-                "id" => "portfolio-ocstudio",
+                "id" => "ocstudio",
                 "title" => "Orient Crown Studio Portfolio",
                 "description" => "Showcasing Elegance: The Orient Crown Design Portfolio",
                 "tags" => ["Web Design", "Full Stack"],
@@ -41,7 +41,7 @@ class ProjectsController extends Controller
                 "image" => "nuber.jpg"
             ],
             [
-                "id" => "sawater-analysis",
+                "id" => "sawater",
                 "title" => "SA Water Resevoir Data Analysis ",
                 "description" => "Understanding how SA water's Reservoirs changes",
                 "tags" => ["Data Analysis"],
