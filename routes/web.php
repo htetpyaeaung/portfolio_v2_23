@@ -27,10 +27,10 @@ Route::get('/projects', [ProjectsController::class, 'processProjects']);
 Route::get('/cara-integration', function () {
     return view('cara');
 });
-Route::get('/mis-thermofisher', function () {
+Route::get('/thermofisher', function () {
     return view('thermo');
 });
-Route::get('/portfolio-ocstudio', function () {
+Route::get('/ocstudio', function () {
     return view('ocportfolio');
 });
 Route::get('/nuber', function () {
