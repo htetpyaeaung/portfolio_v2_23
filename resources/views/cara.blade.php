@@ -119,8 +119,30 @@
             </div>
         </div>
         <div class="flex flex-col mx-auto w-full bg-white text-black">
-            <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_process">
+            <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_hero">
                 <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
+                    <h1 class="font-scoville text-4xl" id="sectionHeader">Technologies Used</h1>
+                    <ul class="max-w-lg space-y-1 text-black list-disc list-inside dark:text-gray-400">
+                        <li>
+                            Vue for Frontend Components
+                        </li>
+                        <li>
+                            Laravel for all backend components
+                        </li>
+                        <li>
+                            Supported by MariaDB
+                        </li>
+                        <li>
+                            Hosted on AWS
+                        </li>
+                    </ul><br/>
+                    <p>Learn more about the whole process of the project and detailed technologies used in <a href="https://www.google.com" target="_blank" class="underline">Here</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col mx-auto w-full bg-white text-black">
+            <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_process">
+                {{-- <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
                     <h1 class="font-scoville text-4xl " id="sectionHeader">Process</h1>
                     <p class="my-4 md:leading-10">
                         Cara hold staff information in both HR Information system and ERP system. Staff have direct access to update their details in ERP system and only HR staff are allowed to enter or update the records in HR Information system. Since ERP allows individual modifications of the profiles, some details are not copied over to HR system and some have been outdated like phone numbers or the address. To avoid data duplication and enhance data consistencies, access to update the profile is restricted and data should only be updated in HR system.<br/>
@@ -166,20 +188,24 @@
                     <p class="my-4 md:leading-10">
                         A scalable customized middleware that digests the data flow from source of truth and spit out the tailored processed data back to the connected system. 
                     </p><br/>
-                </div>
+                </div> --}}
                 <div class="flex flex-col md:flex-row mx-auto px-7 pt-8 w-full h-auto justify-between items-start">
-                    <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0l4 4m-4-4l4-4"/>
-                        </svg>
-                        &nbsp; Prev: SA Water Resevoir Data Analysis                     
-                    </button>
-                    <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Next: New System at Thermo Fisher
-                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </button>
+                    <a href="/sawater">
+                        <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0l4 4m-4-4l4-4"/>
+                            </svg>
+                            &nbsp; Prev: SA Water Resevoir Data Analysis
+                        </button>
+                    </a>
+                    <a href="/thermofisher">
+                        <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Next: New System at Thermo Fisher
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </button>
+                    </a>
                 </div> <br/><br/>
                 
             </div>
