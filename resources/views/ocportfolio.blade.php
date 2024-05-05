@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html class="scroll-smooth" lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ asset('storage/images/favicon.ico') }}">
-  <title>Cara Integration | Projects</title>
+  <title>Projects | Orient Crown Studio Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
