@@ -16,7 +16,6 @@
         <div class="container fixed left-0 top-0 p-4" id="logoDiv">
         <a href="/">
             <img src="{{ asset('storage/images/logo-bg.png') }}" class="logo"/>
-            {{-- <p>Text</p> --}}
         </a>
         </div>
     <div id="navmain">
@@ -29,10 +28,6 @@
         </div>
         <!-- The overlay -->
         <div id="myNav" class="overlay">
-
-          <!-- Button to close the overlay navigation -->
-          {{-- <a href="javascript:void(0)" id="hamburger-close" class="closebtn" onclick="closeNav()">&times;</a> --}}
-
           <!-- Overlay content -->
           <div class="overlay-content">
             <a href="/about">About</a>
@@ -42,8 +37,6 @@
           </div>
 
         </div>
-
-        {{-- <button id="hamburger" onclick="setTextAnimation()">open</button> --}}
         <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -136,7 +129,7 @@
                             Hosted on AWS
                         </li>
                     </ul><br/>
-                    <p>Learn more about the whole process of the project and detailed technologies used in <a href="https://www.google.com" target="_blank" class="underline">Here</a>.</p>
+                    <p>Learn more about the whole process of the project and detailed technologies used in <a href="https://www.google.com" target="_blank" class="underline">here</a>.</p>
                 </div>
             </div>
         </div>
