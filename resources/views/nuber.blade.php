@@ -47,67 +47,36 @@
     
     <section class="w-full h-full flex flex-col xxs:mt-24 lg:mt-28" id='project_section'>
         <div class="flex flex-col mx-auto w-full text-center justify-center items-center" id="project_hero" style="height: 50vh;">
-            <h1 class="font-scoville xxs:text-4xl md:text-7xl" id="sectionHeader">Cara Middleware</h1>
-            <h2 class="xxs:text-sm md:text-md font-normal">A scalable cloud-based custom integration middleware</h2>
+            <h1 class="font-scoville xxs:text-4xl md:text-7xl" id="sectionHeader">Nuber</h1>
+            <h2 class="xxs:text-sm md:text-md font-normal">A fully designed and developed ride-sharing app with the attempt to take a market share in ride-sharing space</h2>
         </div>
         <div class="flex flex-col md:flex-row mx-auto w-full h-1/2 text-center justify-center items-center" id="project_hero">
-            <img class="px-2 py-2 w-full md:w-1/2 h-1/2" src="{{ asset('storage/images/cara_mw.png') }}">
-            <img class="px-2 py-2 w-full md:w-1/2 h-1/2" src="{{ asset('storage/images/cara_mw.png') }}">
+            <img class="px-2 py-2 w-full md:w-1/2 h-1/2" src="{{ asset('storage/images/nuber-main.png') }}">
         </div>
 
         <div class="flex xxs:flex-wrap md:flex-nowrap mx-auto w-full h-full text-center justify-center items-center xxs:space-y-2 md:space-y-0 xxs:space-x-1 md:space-x-2" id="project_hero">
             <div class="flex flex-col w-full h-1/2 justify-center py-12">
                 <h2 class="font-bold text-2xl py-3">Role</h2>
                 <h2 class="text-md py-3">Application Developer</h2>
-                <h3 class="text-sm">Custom Integration, Testing, APIs, Salesforce, Laravel, MariaDB, Redis, AWS</h3>
+                <h3 class="text-sm">System Design, Testing, Java, AWS</h3>
             </div>
             <div class="flex flex-col justify-center w-full h-1/2 py-12">
-                <h2 class="font-bold text-2xl py-3">Team</h2>
-                <h2 class="text-md py-3">Development team, Business Analysts & Project Manager</h2>
-                <h3 class="text-sm">Managed by Head of IT</h3>
+                <h2 class="font-bold text-2xl py-3">Type</h2>
+                <h2 class="text-md py-3">Personal Project<h2>
             </div>
             <div class="flex flex-col justify-center text-center w-full h-1/2 py-12">
                 <h2 class="font-bold text-2xl py-3">Duration</h2>
-                <h2 class="text-md py-3">February - September 2023</h2>
-                <h2 class="text-sm">(8 months)</h2>
+                <h2 class="text-md py-3">August - November 2021</h2>
+                <h2 class="text-sm">(3 months)</h2>
             </div>
         </div>
 
         <div class="flex flex-col mx-auto w-full bg-white">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 md:my-5 h-full justify-center items-start" id="project_hero">
                 <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h1 class="font-scoville text-4xl" id="sectionHeader">Background</h1>
-                    <p class="mt-2">Cara is a leading NDIS disability service provider working alongside people with disability across metropolitan Adelaide and regional South Australia. <a href="https://www.cara.org.au" class="underline">Learn More about what CARA does.</a></p>
-                    <p class="my-5">The goal of this project to identify the potential integration points between the critical business systems use across the business and to drastically reduce manual work by Staff.</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col mx-auto w-full bg-white text-black">
-            <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_hero">
-                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h1 class="font-scoville text-4xl" id="sectionHeader">Problem</h1>
-                    <blockquote class="p-4 my-4 border-s-4 border-gray-300  dark:border-gray-500 dark:bg-gray-800">
-                        <p class="text-xl italic font-bold leading-relaxed ">"15 Minutes"</p>
-                    </blockquote>
-                    <p>
-                    That is how long it takes for a HR staff to onboard or offboard an employee. HR manages a massive information of staff and it takes a significant time for them to manually enter or update the information across the different systems.<br/><br/>
-                    Data are scattered across and there are multiple source of truth for the similar data type and the risk of data duplication in various areas. <br/><br/>
-                    Cara need to streamline this processes to reduce this time-consuming, repetitive task and efficiently manage their scattered data. <br/><br/>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col mx-auto w-full bg-white text-black">
-            <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_hero">
-                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h1 class="font-scoville text-4xl" id="sectionHeader">Solution</h1>
-                    <blockquote class="p-4 my-4 border-s-4 border-gray-300  dark:border-gray-500 dark:bg-gray-800">
-                        <p class="xxs:text-sm md:text-xl italic font-bold leading-relaxed">"Establish a source of truth for all staff information and integrate different systems through centralized integration hub"</p>
-                    </blockquote>
-                    <p class="my-4">
-                        The goal is to design and develop a scalable customized middleware system that allows the data flows from source of truth to all other systems.<br/><br/>
-                        Staff will make changes to one and only one system and the data will be replicated across all different systems that are connected to the middleware. <br/><br/>
-                        This ensures data consistency, reduce the workload and increase efficiency of the staff.<br/></p>
+                    <h1 class="font-scoville text-4xl" id="sectionHeader">Overview</h1>
+                    <p class="mt-2">Nuber (pronounced Nu-ber) is a cloud-based ride-sharing service platform designed to provide the customers with the ability to request for the ride from point A to B and for the drivers to assist in their requsts.</p>
+                    <p class="my-5">The service is designed to be scalable worldwide and can receive the multi-users requests.</p>
                 </div>
             </div>
         </div>
@@ -117,19 +86,19 @@
                     <h1 class="font-scoville text-4xl" id="sectionHeader">Technologies Used</h1>
                     <ul class="max-w-lg space-y-1 text-black list-disc list-inside dark:text-gray-400">
                         <li>
-                            Vue for Frontend Components
+                            React for Frontend Components
                         </li>
                         <li>
-                            Laravel for all backend components
+                            Java for all backend components and backbone
                         </li>
                         <li>
-                            Supported by MariaDB
+                            Supported by PostgreSQL
                         </li>
                         <li>
-                            Hosted on AWS
+                            Hosted on AWS and use Cognito for Authentication
                         </li>
                     </ul><br/>
-                    <p>Learn more about the whole process of the project and detailed technologies used in <a href="https://www.google.com" target="_blank" class="underline">Here</a>.</p>
+                    <p>Learn more about the whole process and design document of the project and detailed technologies in Blog page.</p>
                 </div>
             </div>
         </div>
