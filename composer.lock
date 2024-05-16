@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa322c53454393ed775cfe4807d54a50",
+    "content-hash": "7455803d47726fbddd44034d3eef04bb",
     "packages": [
         {
             "name": "brick/math",
@@ -129,6 +129,88 @@
                 }
             ],
             "time": "2023-12-11T17:09:12+00:00"
+        },
+        {
+            "name": "dbfx/laravel-strapi",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dbfx/laravel-strapi.git",
+                "reference": "42e53f912a3a7da0e3d6de1be937747396318fc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dbfx/laravel-strapi/zipball/42e53f912a3a7da0e3d6de1be937747396318fc3",
+                "reference": "42e53f912a3a7da0e3d6de1be937747396318fc3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.37 || ^9.0 || ^10",
+                "laravel/framework": "^8 || ^9 || ^10",
+                "php": "^7.4 || ^8.0",
+                "spatie/laravel-package-tools": "^1.4.3"
+            },
+            "require-dev": {
+                "brianium/paratest": "^6.2",
+                "ergebnis/composer-normalize": "^2.42",
+                "friendsofphp/php-cs-fixer": "^3.48",
+                "nunomaduro/collision": "^5.3 || ^6.0",
+                "orchestra/testbench": "^6.15",
+                "phpro/grumphp-shim": "^1.13",
+                "phpunit/phpunit": "^9.3",
+                "rector/rector": "^0.19.5",
+                "roave/security-advisories": "dev-latest",
+                "spatie/laravel-ray": "^1.9",
+                "vimeo/psalm": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "LaravelStrapi": "Dbfx\\LaravelStrapi\\LaravelStrapiFacade"
+                    },
+                    "providers": [
+                        "Dbfx\\LaravelStrapi\\LaravelStrapiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dbfx\\LaravelStrapi\\": "src",
+                    "Dbfx\\LaravelStrapi\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Blakey",
+                    "email": "dave@blakey.co",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel wrapper for using the Strapi headless CMS",
+            "homepage": "https://github.com/dbfx/laravel-strapi",
+            "keywords": [
+                "laravel",
+                "laravel-package",
+                "laravel-strapi",
+                "strapi",
+                "strapi-cms"
+            ],
+            "support": {
+                "issues": "https://github.com/dbfx/laravel-strapi/issues",
+                "source": "https://github.com/dbfx/laravel-strapi/tree/v4.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/dbfx",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-02-05T03:03:08+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -3184,6 +3266,66 @@
                 }
             ],
             "time": "2023-11-08T05:53:05+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.16.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-20T07:29:11+00:00"
         },
         {
             "name": "symfony/console",
