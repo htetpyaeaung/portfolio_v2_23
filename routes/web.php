@@ -1,6 +1,8 @@
 <?php
 
+use Dbfx\LaravelStrapi\LaravelStrapi;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProjectsController;
 
 /*
@@ -39,7 +41,17 @@ Route::get('/nuber', function () {
 Route::get('/sawater', function () {
     return view('sawater');
 });
+// Route::get('/blogs', function () {
+//     $strapi = new LaravelStrapi();
+//     return $blog['data'] = $strapi->collection('blogs');
+// });
 
+Route::get('/blogs/{id}', function ($id) {
+    $strapi = new LaravelStrapi();
+    return $blogs = $strapi->entry('blogs', $id);
+});
+
+Route::get('/blogs', [BlogController::class, 'blog']);
 
 Route::get('/tail', function () {
     return view('app');
