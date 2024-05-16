@@ -31,7 +31,7 @@
         <div class="mainNav space-x-6">
           <a href="about">About</a>
           <a href="/projects">Projects</a>
-          <a href="/blog">Blog</a>
+          <a href="/blogs">Blog</a>
           <a href="/contact">Contact</a>
         </div>
         <!-- The overlay -->
@@ -44,7 +44,7 @@
           <div class="overlay-content">
             <a href="/about">About</a>
             <a href="/projects">Projects</a>
-            <a href="/blog">Blog</a>
+            <a href="/blogs">Blog</a>
             <a href="/contact">Contact</a>
           </div>
 
