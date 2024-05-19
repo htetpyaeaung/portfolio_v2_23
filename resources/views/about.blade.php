@@ -91,7 +91,8 @@
             <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Git</span>
             <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">JIRA</span>
             <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">AWS</span>
-            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">WordPres</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">WordPress</span>
+            <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">VSCode</span>
             <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Figma</span>
             <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">Docker</span>
             <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">VMware</span>
@@ -185,7 +186,7 @@
     </a>
   </section>
 
-<footer class="bottom-0 left-0 z-20 w-full p-4 font-bold bg-stone-300 md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+<footer class="bottom-0 left-0 z-20 w-full p-4 font-bold md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
   <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">@php
     echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
   @endphp
