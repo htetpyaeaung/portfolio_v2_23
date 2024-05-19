@@ -41,17 +41,19 @@ Route::get('/nuber', function () {
 Route::get('/sawater', function () {
     return view('sawater');
 });
-// Route::get('/blogs', function () {
+// Route::get('/blogs/{id}', function ($id) {
 //     $strapi = new LaravelStrapi();
-//     return $blog['data'] = $strapi->collection('blogs');
+//     return $blogs = $strapi->entry('blogs', $id);
 // });
+Route::get('/blogs/{id}',  [BlogController::class,'post']);
 
-Route::get('/blogs/{id}', function ($id) {
-    $strapi = new LaravelStrapi();
-    return $blogs = $strapi->entry('blogs', $id);
-});
+
 
 Route::get('/blogs', [BlogController::class, 'blog']);
+Route::get('/post', function () {
+    return view('post');
+});
+
 
 Route::get('/tail', function () {
     return view('app');
