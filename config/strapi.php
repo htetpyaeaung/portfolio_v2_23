@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 return [
     // The url to your Strapi installation, e.g. https://strapi.yoursite.com/
-    'url' => env('STRAPI_URL'),
+    'url' => env('STRAPI_API_URL'),
 
     // How long to cache results for in seconds
     'cacheTime' => (int) env('STRAPI_CACHE_TIME', 3600),
