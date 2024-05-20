@@ -47,20 +47,13 @@
     <div class="w-full h-80 flex-auto grow-0 content-center" id="postCover">
         <img class="rounded-t-lg h-full w-full object-cover" src="{{ asset('storage/images/fullprof.jpg') }}" alt="Random Unsplash Image containing cat" />
     </div>
-    {{-- <div class="w-full h-auto m-0 p-0 flex-grow">
-        <div class="w-full h-auto m-0 p-5 md:p-0">
-            <div class="w-full h-auto flex flex-wrap items-center justify-center place-content-evenly space-x-0 md:space-x-2 flex-col md:flex-row space-y-5 md:space-y-0">
-                
-            </div>
-        </div>        
-    </div> --}}
     <div class="w-full h-auto m-0 p-0 flex-grow">
         <div class="w-full h-auto m-0 md:p-0">
-            <div class="w-full h-auto flex flex-row flex-wrap items-center justify-center place-content-evenly">
-                <div class="w-full md:w-3/4 h-auto bg-gray-200 p-4">
+            <div class="w-full h-auto flex flex-row flex-wrap items-center justify-center place-content-evenly px-4">
+                <div class="w-full md:w-3/4 h-auto p-4">
                     First div content
                 </div>
-                <div class="w-full md:w-1/4 h-auto bg-gray-300 p-4">  
+                <div class="w-full md:w-1/4 h-auto p-4">  
                     <div class="text-left">
                         <p>By <span id="author">Someone</span></p>
                         <p>Date: <span id="date">date</span></p>
