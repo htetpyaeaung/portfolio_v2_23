@@ -26,6 +26,9 @@ class BlogController extends Controller
 
     public function post(int $postID)
     {
-        return $blogs = $this->strapi->entry('blogs', $postID,populate:['authors']);
+        $maxData = $this->strapi->entry('blogs', $postID,populate:['authors','cover']);
+        $maxData = $maxData['data'];
+
+        return view('post',compact('maxData'));
     }
 }
