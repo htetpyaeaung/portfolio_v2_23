@@ -53,7 +53,7 @@
             <p class="pt-1 text-sm grow">By <a href="/about" class="underline" target="_blank">{{  $authorsList['attributes']['Name'] }}</a> . {{  $publishedDate }}</p>
             @endforeach
         </div>
-        <img class=" h-4/5 w-3/4 object-cover grow rounded-[90px] px-8" src="{{ env('STRAPI_URL').$maxData['attributes']['cover']['data']['attributes']['formats']['medium']['url'] }}" alt="Random Unsplash Image containing cat" />
+        <img class=" w-3/4 object-cover rounded-[5.5rem] px-8 py-8" src="{{ env('STRAPI_URL').$maxData['attributes']['cover']['data']['attributes']['formats']['medium']['url'] }}" alt="Random Unsplash Image containing cat" />
     </div>
     <div class="w-full h-auto m-0 p-0 flex flex-grow items-start justify-center">
         <div class="w-3/4 h-auto flex flex-row flex-wrap place-content-evenly px-4">
@@ -87,31 +87,39 @@
                         @endforeach
                     @elseif ($post['type'] === 'paragraph')
                         @foreach ( $post['children'] as $text )
-                            @isset ($post['code'])
-                                <div class="relative bg-gray-50 rounded-lg dark:bg-gray-700 p-4 h-64">
+                            @isset ($text['code'])
+                                <div class="relative bg-gray-700 rounded-lg dark:bg-gray-700 p-4 h-auto flex items-center">
                                     <div class="overflow-scroll max-h-full">
-                                        <pre><code id="code-block" class="text-sm text-gray-500 dark:text-gray-400 whitespace-pre">$text['text']</code></pre>
-                                        {{ $text['text'] }}
+                                        <pre><code id="code-block" class="text-sm text-gray-300 dark:text-gray-400 whitespace-pre">{{  $text['text'] }}</code></pre>
                                     </div>
                                 </div>
                             @else
                                 <p class="mb-3 text-black dark:text-gray-400">{{  $text['text']}}</p>
                             @endisset
                         @endforeach
+                    @elseif ($post['type'] === 'list')
+                        @if($post['format'] === 'ordered')
+                            <ol class="max-w-md space-y-2 pb-2 text-black list-decimal list-inside">   
+                                @foreach ( $post['children'] as $childItems )
+                                    @foreach ($childItems['children'] as $itemText)
+                                        <li>{{ $itemText['text'] }}</li>
+                                    @endforeach
+                                @endforeach
+                            </ol>
+                        @elseif ($post['format'] === 'unordered')
+                            <ul class="max-w-md space-y-2 pb-2 text-black list-disc list-inside">
+                                @foreach ( $post['children'] as $childItems )
+                                    @foreach ($childItems['children'] as $itemText)
+                                        <li>{{ $itemText['text'] }}</li>
+                                    @endforeach
+                                @endforeach
+                            </ul>
+                        @endif
+                    @elseif ($post['type'] === 'image')
+                        <img class=" w-full object-cover rounded-[5.5rem] px-4 py-4" src="{{ env('STRAPI_URL').$post['image']['formats']['medium']['url'] }}" alt="Random Unsplash Image containing cat" />
                     @endif
                 @endforeach
             </div>
-            {{-- <div class="w-full md:w-1/4 h-auto p-4 space-x-4">
-                <div class="text-left">
-                    @foreach ( $maxData['attributes']['authors']['data'] as $authorsList )
-                    <img class="rounded w-36 h-36" src="{{env('STRAPI_URL').  $authorsList['attributes']['avatar']['data']['attributes']['formats']['thumbnail']['url'] }}" alt="Extra large avatar">
-                    <p>{{  $authorsList['attributes']['Name'] }}</p>
-                    <p>{{  $authorsList['attributes']['Email'] }}</p>
-                    @endforeach
-                    <p>Published at {{  $maxData['attributes']['publishedAt'] }}</p>
-                    <p>Updated at {{  $maxData['attributes']['updatedAt'] }} </p>
-                </div>
-            </div> --}}
         </div>
     </div>
     <footer class="w-full p-4 font-bold content-end flex-nowrap md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
