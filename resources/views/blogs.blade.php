@@ -59,7 +59,7 @@
                                 <img class="rounded-t-lg h-48 w-full object-cover" src="{{env('STRAPI_URL').$blog['attributes']['cover']['data']['attributes']['formats']['small']['url'] }}" alt="" />    
                             @endif
                         </a>
-                        <div class="p-5 h-40 flex flex-col justify-between">
+                        <div class="p-5 h-auto flex flex-col justify-between">
                             <div>
                                 <a href="/blogs/{{ $blog['id'] }}">
                                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $blog['attributes']['Title'] }}</h5>

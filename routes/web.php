@@ -50,9 +50,9 @@ Route::get('/blogs/{id}',  [BlogController::class,'post']);
 
 
 Route::get('/blogs', [BlogController::class, 'blog']);
-Route::get('/post', function () {
-    return view('post');
-});
+// Route::get('/post', function () {
+//     return view('post');
+// });
 
 
 Route::get('/tail', function () {
