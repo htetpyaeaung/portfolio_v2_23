@@ -71,7 +71,7 @@
 
 <div class="w-full h-full flex flex-col xxs:mt-24 lg:mt-28" id="projects">
   <div class="mx-auto xxs:w-11/12 lg:w-10/12">
-    <h1 class="xxs:w-full xs:w-3/4 md:w-72 lg:w-2/5 xl:w-80 font-scoville relative section-headers projectHead text-4xl" id="sectionHeader">Featured Projects</h1>
+    <h1 class="xxs:w-full xs:w-3/4 md:w-72 lg:w-2/5 xl:w-80 font-montbold relative section-headers projectHead text-3xl" id="sectionHeader">Featured Projects</h1>
   </div>
 
   @foreach ($projectItems as $item)
