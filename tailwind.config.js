@@ -14,6 +14,8 @@ export default {
       fontFamily: {
        inter: ["Inter","sans-serif"],
        scoville: ["Scoville", "sans-serif"],
+       montlight: ["Montlight","sans-serif"],
+       montbold: ["Montbold","sans-serif"]
       },
       colors: {
         'custom-gray': '#cac3b1',
