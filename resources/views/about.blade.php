@@ -11,12 +11,11 @@
   @vite('resources/css/app.css')
   @vite('resources/js/app.js')
 </head>
-<body class="bg-cover bg-stone-300 bg-no-repeat font-inter">
-  <div class="w-full xxs:h-full flex relative" id="intro">
+<body class="w-full h-auto bg-cover bg-stone-300 bg-no-repeat font-inter">
+  <div class="w-full h-28 flex relative" id="intro">
     <div class="container fixed left-0 top-0 p-4" id="logoDiv">
       <a href="/">
         <img src="{{ asset('storage/images/logo-bg.png') }}" class="logo"/>
-        {{-- <p>Text</p> --}}
       </a>
     </div>
     <div id="navmain">
@@ -29,10 +28,6 @@
         </div>
         <!-- The overlay -->
         <div id="myNav" class="overlay">
-
-          <!-- Button to close the overlay navigation -->
-          {{-- <a href="javascript:void(0)" id="hamburger-close" class="closebtn" onclick="closeNav()">&times;</a> --}}
-
           <!-- Overlay content -->
           <div class="overlay-content">
             <a href="/about">About</a>
@@ -40,10 +35,7 @@
             <a href="/blogs">Blog</a>
             <a href="/contact">Contact</a>
           </div>
-
         </div>
-
-        {{-- <button id="hamburger" onclick="setTextAnimation()">open</button> --}}
         <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -51,7 +43,8 @@
         </button>
       </div>
     </div>
-    <div class="w-full mx-auto flex flex-wrap h-auto xxs:mt-24 lg:h-3/4 lg:mt-28">
+  </div>
+    <div class="w-full mx-auto flex flex-wrap h-auto">
       <div class="flex flex-col w-full xl:w-1/2 lg:h-full xxs:h-auto justify-center p-4">
         <div class="profile">
           <img loading="lazy" src="{{ asset('storage/images/fullprof.jpg') }}" class="rounded-full" style="max-width: 100%; height: auto; z-index: -1;"/>
