@@ -18,9 +18,6 @@ function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeCo
 }
 setTextAnimation(0.2,6,1.5,'ease','#080808',false);
 
-// document.getElementById("hamburger").addEventListener("click",openNav);
-// document.getElementById("hamburger-close").addEventListener("click",closeNav);
-
 document.getElementById("hamburger").addEventListener("click", function() {
     var overlay = document.getElementById("myNav");
     var isExpanded = this.getAttribute("aria-expanded") === "true";
@@ -67,40 +64,43 @@ function closeNav() {
     // document.getElementById("footer_name").style.zIndex = "1s";
 }
 
-// Debounce function to limit how often a function is executed
-function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
+let lastKnownScrollPosition = 0;
+let ticking = false;
+let targetPosition = 0;
+let targetHeight = 0;
+const logoDiv = document.getElementById('logoDiv');
+const navmain = document.getElementById('navmain');
+
+function setup() {
+  const target = document.getElementById('sectionHeader');
+  if (target) {
+    targetPosition = target.offsetTop;
+    targetHeight = target.offsetHeight;
   }
-  
-function onScroll() {
-    const scrollPosition = window.scrollY;
-    const target = document.getElementById('sectionHeader');
-    if (target !== null) {
-      const targetPosition = target.offsetTop;
-      const targetHeight = target.offsetHeight; // Height of the element
-      if (scrollPosition > targetPosition + targetHeight) {
-          document.getElementById('logoDiv').style.display = 'none';
-          document.getElementById('navmain').style.display = 'none';
-      } else {
-          document.getElementById('logoDiv').style.display = 'block';
-          document.getElementById('navmain').style.display = 'block';
-      }
-    } else {
-      document.getElementById('logoDiv').style.display = 'block';
-      document.getElementById('navmain').style.display = 'block';
 }
+
+function onScroll(scrollPos) {
+  if (scrollPos > targetPosition + targetHeight) {
+    logoDiv.style.display = 'none';
+    navmain.style.display = 'none';
+  } else {
+    logoDiv.style.display = 'block';
+    navmain.style.display = 'block';
   }
-  
-  // Attach the scroll event listener to the window with debounce
-  window.addEventListener('scroll', debounce(onScroll, 100));
+}
+
+window.addEventListener('scroll', function(e) {
+  lastKnownScrollPosition = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      onScroll(lastKnownScrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
+
+// Call setup to initialize targetPosition and targetHeight
+setup();
