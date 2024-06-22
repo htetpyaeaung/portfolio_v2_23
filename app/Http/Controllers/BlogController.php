@@ -25,13 +25,13 @@ class BlogController extends Controller
         return view('blogs', compact(['blogs'],['sitesInfo']));
     }
 
-    public function post(int $postID)
+    public function post(string $postSlug)
     {
-        $maxData = $this->strapi->entry('blogs', $postID,populate:['authors','cover','authors.avatar']);
+        $maxData = $this->strapi->entriesByField('blogs', 'slug', $postSlug,populate:['authors','cover','authors.avatar']);
         $maxData = $maxData['data'];
-        $publishedDate = Carbon::parse($maxData['attributes']['publishedAt'])->format('M d, Y');
-        // dd($maxData);
-
+        foreach($maxData as $data){
+            $publishedDate = Carbon::parse($data['attributes']['publishedAt'])->format('M d, Y');
+        }
         return view('post',compact('maxData','publishedDate'));
     }
 }
