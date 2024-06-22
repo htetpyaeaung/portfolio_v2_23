@@ -51,14 +51,14 @@
         </div>
       </div>
       <div class="flex flex-col w-full xl:w-1/2 lg:h-full xxs:h-auto p-4">
-        <h1 class="font-scoville text-4xl" id="sectionHeader">Get to Know Me</h1>
-        <p class="my-4">Hi there, I am Htet Pyae - a Solutions Architect & Developer focused on creating dynamic and user-centric applications that meet precise business requirements.
-        I was born & raised in Yangon, Myanmar but currently based in <span class="font-bold">Adelaide, Australia.</span> Graduated with Bachelor's degree in Computer Science, I am excited to bring my technical skills and passion for problem-solving to the professional world. <br/><br/>
-        Currently, I am working as an Application Developer at <span class="font-bold">Cara.</span> Here at Cara, I've led software integration projects, architecting an Enterprise Service Bus system for seamless connectivity between critical business systems leveraging third-party and internal API integrations. Throughout my studies as well as in my current job, I have gained a strong foundation in programming languages such as Java, Python, and C++, as well as experience in data analysis and machine learning.<br/><br/>
+        <h1 class="font-montbold text-4xl" id="sectionHeader">Get to Know Me</h1>
+        <p class="my-4">Hi there, I am Htet - a Solutions Architect & Developer focus on creating dynamic and user-centric applications.
+        I was born & raised in Yangon, Myanmar but currently based in <span class="font-bold">Adelaide, Australia.</span> Graduated with Bachelor's degree in Computer Science from <span class="font-bold">University of South Australia</span>, I am excited to bring my technical and problem-solving skills to the professional world. <br/><br/>
+        Currently, I am working as an Application Developer at <span class="font-bold">Cara.</span> Here at Cara, I've led software integration projects, leveraging third-party and internal API integrations. Throughout my studies as well as in my current job, I have gained a strong foundation in programming languages such as Java, Python, and C++, as well as experience in data analysis and machine learning.<br/><br/>
         In addition to my technical expertise, I have also developed strong communication and teamwork skills through various group projects and internships. I have a passion for collaborating with others and finding creative solutions to complex problems.<br/><br/>
         Outside of my academic pursuits, I am an avid reader and enjoy staying up-to-date on the latest trends and technologies in the tech industry. In my free time, you can find me volunteering at local events and organizations, as well as exploring new hobbies and interests.
         </p>
-        <h3 class="font-scoville text-xl tracking-wide my-4">Technologies I've worked with</h3>
+        <h3 class="font-montbold text-xl tracking-wide my-4">Technologies I've worked with</h3>
         <div class="flex flex-col flex-wrap gap-2">
           <div class="gap-3">
             <h3 class="mb-1">Languages</h3>
@@ -91,7 +91,7 @@
             <span class="bg-orange-800 text-neutral-50 xxs:text-sm md:text-md font-medium me-2 xxs:px-2.5 md:px-3.5 xxs:py-0.5 md:py-1.5 rounded dark:bg-gray-700 dark:text-gray-300">VMware</span>
           </div>
         </div>
-        <h3 class="font-scoville text-xl tracking-wide my-4">My professional Certifications</h3>
+        <h3 class="font-montbold text-xl tracking-wide my-4">My professional Certifications</h3>
         <div class="flex flex-row flex-wrap gap-4">
           <div>
             <a data-tooltip-target="tooltip-left" data-tooltip-placement="left" href="https://www.credly.com/badges/4ba8c54d-0899-4b75-9ac8-56a21bc2f7dd/linked_in_profile" target="_blank" class="certifications">
@@ -120,7 +120,7 @@
 
   <div class="w-full h-full flex flex-wrap content-center relative">
     <div class="flex w-full lg:w-1/2 p-4 items-start xxs:justify-start md:justify-end">
-      <h1 class="relative font-scoville tracking-wide text-4xl xxs:left-1/4 md:left-0 lg:left-1/4 xl:left-0" id="aboutMeHeader">Experience</h1>
+      <h1 class="relative font-montbold tracking-wide text-4xl xxs:left-1/4 md:left-0 lg:left-1/4 xl:left-0" id="aboutMeHeader">Experience</h1>
       
       <ol class="relative border-s xxs:mx-0 md:mx-11 border-gray-200 dark:border-gray-700 mt-20 exp">                  
           <li class="mb-10 ms-4">
@@ -153,7 +153,7 @@
       <img loading="lazy" src="{{ asset('storage/images/timeline_filler_education.png') }}" class="max-w-full h-auto"/>
     </div>
     <div class="flex flex-auto w-1/2 flex-wrap" >
-      <h1 class="relative font-scoville tracking-wide text-4xl xxs:left-1/4 lg:left-28" id="aboutMeHeader">Education</h1>
+      <h1 class="relative font-montbold tracking-wide text-4xl xxs:left-1/4 lg:left-28" id="aboutMeHeader">Education</h1>
       
       <ol class="relative border-s mx-0 border-gray-200 dark:border-gray-700 xxs:mt-8 md:mt-20 lg:mt-0 xl:mt-20 xxs:ml-20 md:ml-0">                  
           <li class="mb-10 ms-4">
@@ -187,7 +187,7 @@
   </span>
   <ul class="flex flex-wrap items-center mt-3 text-sm gap-3 footer-icons text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>
-        <a href="https://www.twitter.com" target="_blank">
+        <a href="https://x.com/charles_htet" target="_blank">
           <svg class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path fill="currentColor" d="M13.8 10.5 20.7 2h-3l-5.3 6.5L7.7 2H1l7.8 11-7.3 9h3l5.7-7 5.1 7H22l-8.2-11.5Zm-2.4 3-1.4-2-5.6-7.9h2.3l4.5 6.3 1.4 2 6 8.5h-2.3l-4.9-7Z"/>
           </svg>
