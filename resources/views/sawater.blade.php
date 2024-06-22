@@ -98,8 +98,8 @@
         </div>
         <div class="flex flex-col mx-auto w-full bg-white text-black">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_process">
-                <div class="flex flex-col md:flex-row mx-auto px-7 pt-8 w-full h-auto justify-between items-start">
-                    <a href="/nuber">
+                <div class="flex flex-col md:flex-row mx-auto xxs:space-y-5 md:space-y-0 px-7 pt-8 w-full h-auto justify-between items-start">
+                    <a href="/nuber" class="xxs:w-full md:w-auto">
                         <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0l4 4m-4-4l4-4"/>
@@ -107,7 +107,7 @@
                             &nbsp; Prev: Nuber
                         </button>
                     </a>
-                    <a href="/cara-integration">
+                    <a href="/cara-integration" class="xxs:w-full md:w-auto">
                         <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Next: Cara Middleware
                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
