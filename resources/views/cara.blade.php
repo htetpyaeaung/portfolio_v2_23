@@ -47,7 +47,7 @@
     
     <section class="w-full h-full flex flex-col xxs:mt-24 lg:mt-28" id='project_section'>
         <div class="flex flex-col mx-auto w-full text-center justify-center items-center" id="project_hero" style="height: 50vh;">
-            <h1 class="font-scoville xxs:text-4xl md:text-7xl" id="sectionHeader">Cara Middleware</h1>
+            <h1 class="font-montbold xxs:text-4xl md:text-7xl" id="sectionHeader">Cara Middleware</h1>
             <h2 class="xxs:text-sm md:text-md font-normal">A scalable cloud-based custom integration middleware</h2>
         </div>
         <div class="flex flex-col md:flex-row mx-auto w-full h-1/2 text-center justify-center items-center" id="project_hero">
@@ -76,20 +76,20 @@
         <div class="flex flex-col mx-auto w-full bg-white">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 md:my-5 h-full justify-center items-start" id="project_hero">
                 <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h1 class="font-scoville text-4xl" id="sectionHeader">Background</h1>
-                    <p class="mt-2">Cara is a leading NDIS disability service provider working alongside people with disability across metropolitan Adelaide and regional South Australia. <a href="https://www.cara.org.au" class="underline">Learn More about what CARA does.</a></p>
-                    <p class="my-5">The goal of this project to identify the potential integration points between the critical business systems use across the business and to drastically reduce manual work by Staff.</p>
+                    <h1 class="font-montbold text-4xl" id="sectionHeader">Background</h1>
+                    <p class="mt-2 font-normal">Cara is a leading NDIS disability service provider working alongside people with disability across metropolitan Adelaide and regional South Australia. <a href="https://www.cara.org.au" class="underline">Learn More about what CARA does.</a></p>
+                    <p class="my-5 font-normal">The goal of this project to identify the potential integration points between the critical business systems use across the business and to drastically reduce manual work by Staff.</p>
                 </div>
             </div>
         </div>
         <div class="flex flex-col mx-auto w-full bg-white text-black">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_hero">
                 <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h1 class="font-scoville text-4xl" id="sectionHeader">Problem</h1>
+                    <h1 class="font-montbold text-4xl" id="sectionHeader">Problem</h1>
                     <blockquote class="p-4 my-4 border-s-4 border-gray-300  dark:border-gray-500 dark:bg-gray-800">
                         <p class="text-xl italic font-bold leading-relaxed ">"15 Minutes"</p>
                     </blockquote>
-                    <p>
+                    <p class="font-normal">
                     That is how long it takes for a HR staff to onboard or offboard an employee. HR manages a massive information of staff and it takes a significant time for them to manually enter or update the information across the different systems.<br/><br/>
                     Data are scattered across and there are multiple source of truth for the similar data type and the risk of data duplication in various areas. <br/><br/>
                     Cara need to streamline this processes to reduce this time-consuming, repetitive task and efficiently manage their scattered data. <br/><br/>
@@ -100,11 +100,11 @@
         <div class="flex flex-col mx-auto w-full bg-white text-black">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_hero">
                 <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h1 class="font-scoville text-4xl" id="sectionHeader">Solution</h1>
+                    <h1 class="font-montbold text-4xl" id="sectionHeader">Solution</h1>
                     <blockquote class="p-4 my-4 border-s-4 border-gray-300  dark:border-gray-500 dark:bg-gray-800">
                         <p class="xxs:text-sm md:text-xl italic font-bold leading-relaxed">"Establish a source of truth for all staff information and integrate different systems through centralized integration hub"</p>
                     </blockquote>
-                    <p class="my-4">
+                    <p class="my-4 font-normal">
                         The goal is to design and develop a scalable customized middleware system that allows the data flows from source of truth to all other systems.<br/><br/>
                         Staff will make changes to one and only one system and the data will be replicated across all different systems that are connected to the middleware. <br/><br/>
                         This ensures data consistency, reduce the workload and increase efficiency of the staff.<br/></p>
@@ -114,8 +114,8 @@
         <div class="flex flex-col mx-auto w-full bg-white text-black">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_hero">
                 <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h1 class="font-scoville text-4xl" id="sectionHeader">Technologies Used</h1>
-                    <ul class="max-w-lg space-y-1 text-black list-disc list-inside dark:text-gray-400">
+                    <h1 class="font-montbold text-4xl" id="sectionHeader">Technologies Used</h1>
+                    <ul class="max-w-lg space-y-1 text-black list-disc list-inside dark:text-gray-400 font-normal">
                         <li>
                             Vue for Frontend Components
                         </li>
@@ -129,7 +129,7 @@
                             Hosted on AWS
                         </li>
                     </ul><br/>
-                    <p>Learn more about the whole process of the project and detailed technologies used in <a href="https://www.google.com" target="_blank" class="underline">here</a>.</p>
+                    <p class="font-normal">Learn more about the whole process of the project and detailed technologies used in <a href="https://www.google.com" target="_blank" class="underline">here</a>.</p>
                 </div>
             </div>
         </div>
@@ -182,7 +182,7 @@
                         A scalable customized middleware that digests the data flow from source of truth and spit out the tailored processed data back to the connected system. 
                     </p><br/>
                 </div> --}}
-                <div class="flex flex-col md:flex-row mx-auto px-7 pt-8 w-full h-auto justify-between items-start">
+                <div class="flex flex-col md:flex-row mx-auto px-7 xxs:space-y-5 md:space-y-0 pt-8 w-full h-auto justify-between items-start">
                     <a href="/sawater">
                         <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
