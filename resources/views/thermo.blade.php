@@ -119,7 +119,7 @@
         </div>
         <div class="flex flex-col mx-auto w-full bg-white text-black">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_hero">
-                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
+                <div class="flex flex-col mx-auto xxs:space-y-5 md:space-y-0 px-7 pt-8 w-full h-auto justify-left items-start">
                     <h1 class="font-scoville text-4xl" id="sectionHeader">Technologies Used</h1>
                     <ul class="max-w-lg space-y-1 text-black list-disc list-inside dark:text-gray-400">
                         <li>
@@ -140,17 +140,17 @@
         </div>
         <div class="flex flex-col mx-auto w-full bg-white text-black">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_process">
-                <div class="flex flex-col md:flex-row mx-auto px-7 pt-8 w-full h-auto justify-between items-start">
-                    <a href="/cara-integration">
-                        <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <div class="flex flex-col md:flex-row mx-auto xxs:space-y-5 md:space-y-0 px-7 pt-8 w-full h-auto justify-between items-start">
+                    <a href="/cara-integration" class="xxs:w-full md:w-auto">
+                        <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center xxs:w-full md:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0l4 4m-4-4l4-4"/>
                             </svg>
                             &nbsp; Prev: Cara Middleware
                         </button>
                     </a>
-                    <a href="/ocstudio">
-                        <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="/ocstudio" class="xxs:w-full md:w-auto">
+                        <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center xxs:w-full md:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Next: Orient Crown Studio Portfolio
                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
