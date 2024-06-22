@@ -46,19 +46,23 @@
             </div>
         </div>
     </div>
+    @foreach ( $maxData as $data)
+        
+    
     <div class="w-full h-[40rem] shrink-0 flex flex-col content-center items-center justify-center" id="postCover">
         <div class="flex flex-col h-1/5 grow-1">
-            <h1 class="text-5xl font-extrabold  dark:text-white grow">{{ $maxData['attributes']['Title'] }}</h1>
-            @foreach ( $maxData['attributes']['authors']['data'] as $authorsList )
+            
+            <h1 class="text-5xl font-extrabold  dark:text-white grow">{{ $data['attributes']['Title'] }}</h1>
+            @foreach ( $data['attributes']['authors']['data'] as $authorsList )
             <p class="pt-1 text-sm grow">By <a href="/about" class="underline" target="_blank">{{  $authorsList['attributes']['Name'] }}</a> . {{  $publishedDate }}</p>
             @endforeach
         </div>
-        <img class=" w-3/4 object-cover rounded-[5.5rem] px-8 py-8" src="{{ env('STRAPI_URL').$maxData['attributes']['cover']['data']['attributes']['formats']['medium']['url'] }}" alt="Random Unsplash Image containing cat" />
+        <img class=" w-3/4 object-cover rounded-[5.5rem] px-8 py-8" src="{{ env('STRAPI_URL').$data['attributes']['cover']['data']['attributes']['formats']['medium']['url'] }}" alt="Random Unsplash Image containing cat" />
     </div>
-    <div class="w-full h-auto m-0 p-0 flex flex-grow items-start justify-center">
+    <div class="w-full h-auto m-0 p-0 flex flex-grow items-start justify-center font-normal">
         <div class="w-3/4 h-auto flex flex-row flex-wrap place-content-evenly px-4">
             <div class="w-full h-auto p-4">
-                @foreach ($maxData['attributes']['Post'] as $post)
+                @foreach ($data['attributes']['Post'] as $post)
                     @if($post['type'] == 'heading' && $post['level'] == 1)
                         @foreach ( $post['children'] as $text )
                         <h1 class="text-5xl font-extrabold dark:text-white">{{ $text['text'] }}</h1>
@@ -122,15 +126,17 @@
             </div>
         </div>
     </div>
+    @endforeach
     <footer class="w-full p-4 font-bold content-end flex-nowrap md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">@php
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            @php
             echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
             @endphp
             Crafted with &#10084; by Htet Pyae Aung
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm gap-3 footer-icons text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>
-                <a href="https://www.twitter.com" target="_blank">
+                <a href="https://x.com/charles_htet" target="_blank">
                     <svg class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M13.8 10.5 20.7 2h-3l-5.3 6.5L7.7 2H1l7.8 11-7.3 9h3l5.7-7 5.1 7H22l-8.2-11.5Zm-2.4 3-1.4-2-5.6-7.9h2.3l4.5 6.3 1.4 2 6 8.5h-2.3l-4.9-7Z" />
                     </svg>
