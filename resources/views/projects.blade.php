@@ -85,7 +85,7 @@
           @endforeach
         </div>
         <br/>
-        <a href='{{ '/'.$item['id'] }}' target="_blank">
+        <a href='{{ '/'.$item['id'] }}'>
           <button class="relative mt-2 z-10 inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
             <span class="relative px-5 py-2.5 transition-all ease-in duration-500 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               Read Case Study
@@ -119,7 +119,7 @@
   </span>
   <ul class="flex flex-wrap items-center mt-3 text-sm gap-3  text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>
-        <a href="https://www.twitter.com" target="_blank">
+        <a href="https://x.com/charles_htet" target="_blank">
           <svg class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path fill="currentColor" d="M13.8 10.5 20.7 2h-3l-5.3 6.5L7.7 2H1l7.8 11-7.3 9h3l5.7-7 5.1 7H22l-8.2-11.5Zm-2.4 3-1.4-2-5.6-7.9h2.3l4.5 6.3 1.4 2 6 8.5h-2.3l-4.9-7Z"/>
           </svg>
