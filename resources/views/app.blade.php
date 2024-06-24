@@ -19,7 +19,7 @@
   </style>
 </head>
 <body class="font-inter">
-  <div class="bg-cover bg-stone-300 w-full h-screen flex relative" id="intro">
+  <div class="bg-cover bg-stone-300 w-full h-dvh flex relative" id="intro">
     <div class="container fixed left-0 top-0 p-4">
       <a href="/">
         <img src="{{ asset('storage/images/logo-bg.png') }}" class="logo"/>
