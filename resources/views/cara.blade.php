@@ -52,7 +52,7 @@
         </div>
         <div class="flex flex-col md:flex-row mx-auto w-full h-1/2 text-center justify-center items-center" id="project_hero">
             <img class="px-2 py-2 w-full md:w-1/2 h-1/2" src="{{ asset('storage/images/cara_mw.png') }}">
-            <img class="px-2 py-2 w-full md:w-1/2 h-1/2" src="{{ asset('storage/images/cara_mw.png') }}">
+            <img class="px-2 py-2 w-full md:w-1/2 h-1/2" src="{{ asset('storage/images/portal.png') }}">
         </div>
 
         <div class="flex xxs:flex-wrap md:flex-nowrap mx-auto w-full h-full text-center justify-center items-center xxs:space-y-2 md:space-y-0 xxs:space-x-1 md:space-x-2" id="project_hero">
