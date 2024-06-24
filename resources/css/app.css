@@ -233,7 +233,7 @@ body{
 .profile img {
     max-width: 100%; /* Image can be up to 100% of the container's width */
     max-height: 100%; /* Image can be up to 100% of the container's height */
-    object-fit: contain; /* Ensures the image aspect ratio is preserved */
+    object-fit: cover; /* Ensures the image aspect ratio is preserved */
     filter: grayscale(100%);
     box-shadow: 20px 40px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
     /* border-radius:43% 57% 48% 52% / 51% 65% 35% 49%   ; */
