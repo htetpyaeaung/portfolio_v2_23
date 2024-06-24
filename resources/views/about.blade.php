@@ -46,8 +46,8 @@
   </div>
     <div class="w-full mx-auto flex flex-wrap h-auto">
       <div class="flex flex-col w-full xl:w-1/2 lg:h-full xxs:h-auto justify-center p-4">
-        <div class="profile">
-          <img loading="lazy" src="{{ asset('storage/images/fullprof.jpg') }}" class="rounded-full" style="max-width: 100%; height: auto; z-index: -1;"/>
+        <div class="profile w-full">
+          <img loading="lazy" src="{{ asset('storage/images/fullprof.jpg') }}" class="rounded-full w-full" width="100" style="max-width: 100%; height: auto; z-index: -1;"/>
         </div>
       </div>
       <div class="flex flex-col w-full xl:w-1/2 lg:h-full xxs:h-auto p-4">
