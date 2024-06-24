@@ -4,7 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ asset('storage/images/favicon.ico') }}">
-  <title>Htet Pyae Aung | Developer</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>Htet Pyae Aung — Full-stack Developer, Solution Architect</title>
+  <meta name="title" content="Htet Pyae Aung — Full-stack Developer, Solution Architect" />
+  <meta name="description" content="Htet is an Adelaide-based full-stack application developer currently working as an Application Developer at Cara. Htet has an extensive background and experience in leading ERP and software integration projects. " />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://htetpyaeaung.dev" />
+  <meta property="og:title" content="Htet Pyae Aung — Full-stack Developer, Solution Architect" />
+  <meta property="og:description" content="Htet is an Adelaide-based full-stack application developer currently working as an Application Developer at Cara. Htet has an extensive background and experience in leading ERP and software integration projects. " />
+  <meta property="og:image" content="{{ asset('storage/images/fullprof.jpg') }}" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://htetpyaeaung.dev" />
+  <meta property="twitter:title" content="Htet Pyae Aung — Full-stack Developer, Solution Architect" />
+  <meta property="twitter:description" content="Htet is an Adelaide-based full-stack application developer currently working as an Application Developer at Cara. Htet has an extensive background and experience in leading ERP and software integration projects. " />
+  <meta property="twitter:image" content="{{ asset('storage/images/fullprof.jpg') }}" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -75,7 +94,7 @@
       </div>
     </div>
 
-    <div class="container xxs:w-1/3 absolute bottom-0 left-0 flex flex-col">
+    <div class="container xxs:w-1/3 absolute bottom-0 left-0 flex flex-col" id="social-icons-landing">
       <div class="container space-y-4">
         <a href="https://github.com/htetpyaeaung" target="_blank" class="mb-1">
           <svg class="hover:fill-white icons mb-4" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
@@ -103,14 +122,7 @@
       @php
         echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
       @endphp
-       Crafted with &#10084; by Htet Pyae Aung
+       Crafted with <span id="heartIcon" class="px-1">&#10084;</span> by Htet Pyae Aung
     </h1>
-
-
-
-  
-
-
-  {{-- <script src="./node_modules/flowbite/dist/flowbite.min.js"></script> --}}
 </body>
 </html

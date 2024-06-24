@@ -132,7 +132,7 @@
             @php
             echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
             @endphp
-            Crafted with &#10084; by Htet Pyae Aung
+            Crafted with <span id="heartIcon" class="px-1">&#10084;</span> by Htet Pyae Aung
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm gap-3 footer-icons text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>

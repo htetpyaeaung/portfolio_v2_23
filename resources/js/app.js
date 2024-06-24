@@ -1,4 +1,3 @@
-import { doc } from 'prettier';
 import './bootstrap';
 import 'flowbite';
 
@@ -34,17 +33,24 @@ document.getElementById("hamburger").addEventListener("click", function() {
     }
 });
 
-/* Open when someone clicks on the span element */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
     const targetElementHome = document.getElementById("svg-parent");
     const targetElementproject = document.getElementById("sectionHeader");
     const targetprojectItems = document.getElementsByClassName("project-item");
+    const targetSocialIcons = document.getElementById("social-icons-landing");
+    const targetHeart = document.getElementById("heartIcon");
     if(targetElementHome != null){
       document.getElementById("svg-parent").style.zIndex = "-10";
     }
     if(targetElementproject != null){
       document.getElementById("sectionHeader").style.zIndex = "-1";
+    }
+    if(targetSocialIcons != null){
+      targetSocialIcons.style.zIndex = "-1";
+    }
+    if(targetHeart != null){
+      targetHeart.style.zIndex = "-1";
     }
     if(targetprojectItems != null){
       [...document.getElementsByClassName("project-item")].forEach(element => {
@@ -53,15 +59,20 @@ function openNav() {
     }
 }
 
-  
-/* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     const targetElementHome = document.getElementById("svg-parent");
+    const targetSocialIcons = document.getElementById("social-icons-landing");
+    const targetHeart = document.getElementById("heartIcon");
     if(targetElementHome != null){
       document.getElementById("svg-parent").style.zIndex = "1";
     }
-    // document.getElementById("footer_name").style.zIndex = "1s";
+    if(targetSocialIcons != null){
+      targetSocialIcons.style.zIndex = "1";
+    }
+    if(targetHeart != null){
+      targetHeart.style.zIndex = "1";
+    }
 }
 
 let lastKnownScrollPosition = 0;
@@ -102,5 +113,4 @@ window.addEventListener('scroll', function(e) {
   }
 });
 
-// Call setup to initialize targetPosition and targetHeight
 setup();

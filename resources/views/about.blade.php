@@ -4,7 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ asset('storage/images/favicon.ico') }}">
-  <title>Htet Pyae Aung | Developer</title>
+  <<!-- Primary Meta Tags -->
+  <title>About Htet Pyae Aung — Full-stack Developer, Solution Architect</title>
+  <meta name="title" content="Htet Pyae Aung — Full-stack Developer, Solution Architect" />
+  <meta name="description" content="Htet is an Adelaide-based full-stack application developer currently working as an Application Developer at Cara. Htet has an extensive background and experience in leading ERP and software integration projects. " />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://htetpyaeaung.dev/about" />
+  <meta property="og:title" content="About Htet Pyae Aung — Full-stack Developer, Solution Architect" />
+  <meta property="og:description" content="Htet is an Adelaide-based full-stack application developer currently working as an Application Developer at Cara. Htet has an extensive background and experience in leading ERP and software integration projects. " />
+  <meta property="og:image" content="{{ asset('storage/images/fullprof.jpg') }}" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://htetpyaeaung.dev/about" />
+  <meta property="twitter:title" content="About Htet Pyae Aung — Full-stack Developer, Solution Architect" />
+  <meta property="twitter:description" content="Htet is an Adelaide-based full-stack application developer currently working as an Application Developer at Cara. Htet has an extensive background and experience in leading ERP and software integration projects. " />
+  <meta property="twitter:image" content="{{ asset('storage/images/fullprof.jpg') }}" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -183,7 +201,7 @@
   <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">@php
     echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
   @endphp
-   Crafted with &#10084; by Htet Pyae Aung | Illustrations from <a href="https://absurd.design">absurd.design</a>
+   Crafted with <span id="heartIcon" class="px-1">&#10084;</span> by Htet Pyae Aung | Illustrations from <a href="https://absurd.design">absurd.design</a>
   </span>
   <ul class="flex flex-wrap items-center mt-3 text-sm gap-3 footer-icons text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>

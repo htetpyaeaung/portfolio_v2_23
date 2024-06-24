@@ -135,53 +135,6 @@
         </div>
         <div class="flex flex-col mx-auto w-full bg-white text-black">
             <div class="flex flex-col mx-auto xxs:w-full md:w-3/4 h-full justify-center items-start" id="project_process">
-                {{-- <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h1 class="font-scoville text-4xl " id="sectionHeader">Process</h1>
-                    <p class="my-4 md:leading-10">
-                        Cara hold staff information in both HR Information system and ERP system. Staff have direct access to update their details in ERP system and only HR staff are allowed to enter or update the records in HR Information system. Since ERP allows individual modifications of the profiles, some details are not copied over to HR system and some have been outdated like phone numbers or the address. To avoid data duplication and enhance data consistencies, access to update the profile is restricted and data should only be updated in HR system.<br/>
-                    </p>
-                </div>
-                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h2 class="text-2xl md:text-3xl font-bold" > How do we ensure data in HR system is up to date?</h2>
-                    <p class="my-4 md:leading-10">
-                        With the amount of data hold in the system, it is impossible to go through individual profiles in two different systems and match up each other.<br/>
-                    <ol class="list-decimal ml-4">
-                        <li>Staff are notified about the existing personal details hold in the HR system and asking them to update if any of them are changed by the specific due date.</li>
-                        <li>By the due date, the details will be used to update the HR system to have the latest information.</li>
-                    </ol><br/>
-                    Instead of checking two different systems to find the unmatched information, HR staff only need to focus on one system and the replies from the staff.
-                    </p><br/>
-                </div>
-                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h2 class="text-2xl md:text-3xltext-2xl md:text-3xl font-bold" > Requirement Gathering: Is the project feasible?</h2>
-                    <p class="my-4 md:leading-10">
-                        Before we start doing this integrations, we need to gather data on whether the systems are even connectable.<br/>
-                        This required two phases: <br/>
-                    <ol class="list-decimal ml-4">
-                        <li>We look at the individual systems, meaning diving through their documentation and check whether they have public APIs since we will be using that to integrate through centralized hub.</li>
-                        <li>If no, then we have to look at alternatives on how we can integrate differently for that system. </li>
-                    </ol><br/>
-                    Fortunately, most of the systems at Cara support public APIs so the project is feasible to proceed.
-                    </p><br/>
-                </div>
-                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h2 class="text-2xl md:text-3xltext-2xl md:text-3xl font-bold" > Build or Buy: Middleware</h2>
-                    <p class="my-4 md:leading-10">
-                        Now that the project is feasible and research is being done on the projected efficiecy of the system, we need to decide on buying a COTS or build a customized solution tailored to the business. A lot of factors are influenced in making a decision on this. However, senior management decided to proceed with building a customized solution rather than buying a COTS, we went ahead with that.
-                    </p><br/>
-                </div>
-                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h2 class="text-2xl md:text-3xltext-2xl md:text-3xl font-bold" > Roadblocks</h2>
-                    <p class="my-4 md:leading-10">
-                        Some legacy systems do not support the modern REST API methods which is the case for some systems at CARA. Like all the other API endpoints, there is a rate limit imposed on APIs so we need to ensure the system runs efficiently and effectively without hitting the limit for normal tasks.
-                    </p><br/>
-                </div>
-                <div class="flex flex-col mx-auto px-7 pt-8 w-full h-auto justify-left items-start">
-                    <h2 class="text-2xl md:text-3xltext-2xl md:text-3xl font-bold" > Results</h2>
-                    <p class="my-4 md:leading-10">
-                        A scalable customized middleware that digests the data flow from source of truth and spit out the tailored processed data back to the connected system. 
-                    </p><br/>
-                </div> --}}
                 <div class="flex flex-col md:flex-row mx-auto px-7 xxs:space-y-5 md:space-y-0 pt-8 w-full h-auto justify-between items-start">
                     <a href="/sawater">
                         <button type="button" class="text-white bg-rose-900 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

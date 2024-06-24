@@ -5,7 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="{{ asset('storage/images/favicon.ico') }}">
-    <title>Let's Build Something Great Together!</title>
+    <!-- Primary Meta Tags -->
+    <title>Let’s build something great together with Htet</title>
+    <meta name="title" content=“For any business website implementation like Shopify, Wordpress or need a developer for your big project, I am available for any size of project” />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://htetpyaeaung.dev/contact” />
+    <meta property="og:title" content="Let’s build something great together with Htet" />
+    <meta property="og:description" content="For any business website implementation like Shopify, Wordpress or need a developer for your big project, I am available for any size of project" />
+    <meta property="og:image" content="{{ asset('storage/images/fullprof.jpg') }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://htetpyaeaung.dev/contact” />
+    <meta property="twitter:title" content="Let’s build something great together with Htet" />
+    <meta property="twitter:description" content="For any business website implementation like Shopify, Wordpress or need a developer for your big project, I am available for any size of project" />
+    <meta property="twitter:image" content="{{ asset('storage/images/fullprof.jpg') }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -93,7 +109,7 @@
         <span class="text-sm text-gray-500 text-center dark:text-gray-400">@php
             echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
             @endphp
-            Crafted with &#10084; by Htet Pyae Aung
+            Crafted with <span id="heartIcon" class="px-1">&#10084;</span> by Htet Pyae Aung
         </span>
     </footer>
 </body>

@@ -115,7 +115,7 @@
   <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">@php
     echo '&copy; '.date('Y');
   @endphp
-   Crafted with &#10084; by Htet Pyae Aung | Resevoir Photo by <a href="https://unsplash.com/@vladizlo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vlad Zaytsev</a> on <a href="https://unsplash.com/photos/boat-on-lake-near-green-trees-during-daytime-ipKxS3liiiA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+   Crafted with <span id="heartIcon" class="px-1">&#10084;</span> by Htet Pyae Aung | Resevoir Photo by <a href="https://unsplash.com/@vladizlo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Vlad Zaytsev</a> on <a href="https://unsplash.com/photos/boat-on-lake-near-green-trees-during-daytime-ipKxS3liiiA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   </span>
   <ul class="flex flex-wrap items-center mt-3 text-sm gap-3  text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>
