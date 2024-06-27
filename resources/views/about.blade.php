@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="{{ asset('storage/images/favicon.ico') }}">
-  <<!-- Primary Meta Tags -->
+  <!-- Primary Meta Tags -->
   <title>About Htet Pyae Aung — Full-stack Developer, Solution Architect</title>
   <meta name="title" content="Htet Pyae Aung — Full-stack Developer, Solution Architect" />
   <meta name="description" content="Htet is an Adelaide-based full-stack application developer currently working as an Application Developer at Cara. Htet has an extensive background and experience in leading ERP and software integration projects. " />
@@ -136,11 +136,10 @@
     </div>
   </div>
 
-  <div class="w-full h-full flex flex-wrap content-center relative">
-    <div class="flex w-full lg:w-1/2 p-4 items-start xxs:justify-start md:justify-end">
-      <h1 class="relative font-montbold tracking-wide text-4xl xxs:left-1/4 md:left-0 lg:left-1/4 xl:left-0" id="aboutMeHeader">Experience</h1>
-      
-      <ol class="relative border-s xxs:mx-0 md:mx-11 border-gray-200 dark:border-gray-700 mt-20 exp">                  
+  <div class="w-full h-full flex flex-col lg:flex-row flex-wrap content-center relative">
+    <div class="flex flex-col w-full lg:w-1/2 p-4 items-center xxs:justify-start md:justify-end">
+      <h1 class="relative font-montbold tracking-wide text-4xl xxs:left-0 md:left-12 lg:left-1/4 xl:left-12" id="aboutMeHeader">Experience</h1>
+      <ol class="relative border-s border-gray-200 dark:border-gray-700 mt-8 xxs:ml-8 md:ml-44 lg:ml-0">                  
           <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <time class="mb-1 text-sm font-normal leading-none dark:text-gray-500">January 2020 - January 2021</time>
@@ -170,10 +169,10 @@
     <div class="flex w-full lg:w-1/2 p-4 items-start xxs:justify-center lg:justify-end" id="t-filler">
       <img loading="lazy" src="{{ asset('storage/images/timeline_filler_education.png') }}" class="max-w-full h-auto"/>
     </div>
-    <div class="flex flex-auto w-1/2 flex-wrap" >
-      <h1 class="relative font-montbold tracking-wide text-4xl xxs:left-1/4 lg:left-28" id="aboutMeHeader">Education</h1>
+    <div class="flex flex-col flex-auto items-center w-1/2 flex-wrap" >
+      <h1 class="relative font-montbold tracking-wide text-4xl" id="aboutMeHeader">Education</h1>
       
-      <ol class="relative border-s mx-0 border-gray-200 dark:border-gray-700 xxs:mt-8 md:mt-20 lg:mt-0 xl:mt-20 xxs:ml-20 md:ml-0">                  
+      <ol class="relative border-s mx-0 border-gray-200 dark:border-gray-700 xxs:mt-8 md:mt-20 lg:mt-0 xl:mt-20 xxs:ml-12 md:ml-0">                  
           <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <time class="mb-1 text-sm font-normal leading-none dark:text-gray-500">February 2019</time>
@@ -191,7 +190,12 @@
   </div>
 
   <section class="flex justify-center items-center h-48">
-    <a href="https://drive.google.com/uc?export=download&id=1ZSJGmfYQOPThtS6FcTJJHoo8l5hrqjL_" download="MyResume.pdf" class="download-button flex items-center bg-rose-900 hover:bg-red-900 text-white font-bold py-2 px-4 border border-blue-700 rounded transition duration-300 ease-in-out">
+    {{-- <a href="https://drive.google.com/uc?export=download&id=1ZSJGmfYQOPThtS6FcTJJHoo8l5hrqjL_" download="MyResume.pdf" class="download-button flex items-center bg-rose-900 hover:bg-red-900 text-white font-bold py-2 px-4 border border-blue-700 rounded transition duration-300 ease-in-out">
+      Download My Resume
+      <span class="arrow ml-2 inline-block transform transition duration-500 ease-in-out">↓</span>
+    </a> --}}
+
+    <a href="{{ asset('storage/Htet Pyae Aung- Resume.pdf') }}" download="Htet's_Resume.pdf" class="download-button flex items-center bg-rose-900 hover:bg-red-900 text-white font-bold py-2 px-4 border border-blue-700 rounded transition duration-300 ease-in-out">
       Download My Resume
       <span class="arrow ml-2 inline-block transform transition duration-500 ease-in-out">↓</span>
     </a>
@@ -201,7 +205,7 @@
   <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">@php
     echo '&copy; 2024', ($year = gmdate("Y")) !== '2024'? ' - '.$year : '';
   @endphp
-   Crafted with <span id="heartIcon" class="px-1">&#10084;</span> by Htet Pyae Aung | Illustrations from <a href="https://absurd.design">absurd.design</a>
+   Crafted with <span id="heartIcon" class="contents">&#10084;</span> by Htet Pyae Aung | Illustrations from <a href="https://absurd.design">absurd.design</a>
   </span>
   <ul class="flex flex-wrap items-center mt-3 text-sm gap-3 footer-icons text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>
