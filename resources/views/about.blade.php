@@ -190,12 +190,7 @@
   </div>
 
   <section class="flex justify-center items-center h-48">
-    {{-- <a href="https://drive.google.com/uc?export=download&id=1ZSJGmfYQOPThtS6FcTJJHoo8l5hrqjL_" download="MyResume.pdf" class="download-button flex items-center bg-rose-900 hover:bg-red-900 text-white font-bold py-2 px-4 border border-blue-700 rounded transition duration-300 ease-in-out">
-      Download My Resume
-      <span class="arrow ml-2 inline-block transform transition duration-500 ease-in-out">↓</span>
-    </a> --}}
-
-    <a href="{{ asset('storage/Htet Pyae Aung- Resume.pdf') }}" download="Htet's_Resume.pdf" class="download-button flex items-center bg-rose-900 hover:bg-red-900 text-white font-bold py-2 px-4 border border-blue-700 rounded transition duration-300 ease-in-out">
+    <a href="https://drive.google.com/uc?export=download&id=1ZSJGmfYQOPThtS6FcTJJHoo8l5hrqjL_" download="MyResume.pdf" class="download-button flex items-center bg-rose-900 hover:bg-red-900 text-white font-bold py-2 px-4 border border-blue-700 rounded transition duration-300 ease-in-out">
       Download My Resume
       <span class="arrow ml-2 inline-block transform transition duration-500 ease-in-out">↓</span>
     </a>
