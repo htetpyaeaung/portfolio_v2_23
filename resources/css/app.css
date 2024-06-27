@@ -557,11 +557,11 @@ body{
 
 @screen 2xl {
     .icons {
-        max-width: 2.3%;
+        max-width: 5.3%;
     }
 
     div .icons {
-        margin-left: 3.3%;
+        margin-left: 8.3%;
     }
     .overlay a {
         font-size: 36px;
@@ -580,7 +580,7 @@ body{
     }
 
     .verline {
-        margin-left: 4.1%;
+        margin-left: 10.5%;
     }
     .logo{
         width: 9%;
