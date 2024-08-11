@@ -69,11 +69,11 @@
             <div class="w-full h-auto flex flex-wrap items-center justify-center place-content-evenly space-x-0 md:space-x-2 flex-col md:flex-row space-y-5 md:space-y-0">
                 @foreach ($blogs as $blog)
                     <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 basis-1/2 md:basis-1/4 md:grow-0 flex-shrink-0 flex-grow-0 w-full md:w-1/4" id='post'>
-                        <a href="/blogs/{{ $blog['id'] }}">
+                        <a href="/blogs/{{ $blog['attributes']['slug'] }}">
                             @if ($blog['attributes']['cover']['data'] == null)
                                 <img class="rounded-t-lg h-48 w-full object-cover" src="https://source.unsplash.com/450x450/?cat" alt="Random Unsplash Image containing cat" />
                             @else
-                                <img class="rounded-t-lg h-48 w-full object-cover" src="{{env('STRAPI_URL').$blog['attributes']['cover']['data']['attributes']['formats']['small']['url'] }}" alt="" />    
+                                <img class="rounded-t-lg h-48 w-full object-cover" src="{{$blog['attributes']['cover']['data']['attributes']['formats']['small']['url'] }}" alt="" />    
                             @endif
                         </a>
                         <div class="p-5 h-auto flex flex-col justify-between">
