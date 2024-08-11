@@ -57,7 +57,7 @@
             <p class="pt-1 text-sm grow">By <a href="/about" class="underline" target="_blank">{{  $authorsList['attributes']['Name'] }}</a> . {{  $publishedDate }}</p>
             @endforeach
         </div>
-        <img class=" w-3/4 object-cover rounded-[5.5rem] px-8 py-8" src="{{ env('STRAPI_URL').$data['attributes']['cover']['data']['attributes']['formats']['medium']['url'] }}" alt="Random Unsplash Image containing cat" />
+        <img class=" w-3/4 object-cover rounded-[5.5rem] px-8 py-8" src="{{ $data['attributes']['cover']['data']['attributes']['formats']['medium']['url'] }}" alt="Random Unsplash Image containing cat" />
     </div>
     <div class="w-full h-auto m-0 p-0 flex flex-grow items-start justify-center font-normal">
         <div class="w-3/4 h-auto flex flex-row flex-wrap place-content-evenly px-4">
